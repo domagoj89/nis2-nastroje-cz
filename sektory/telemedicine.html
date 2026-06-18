@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIS2 pro telehealth platformy v ČR – Povinnosti 2026</title>
+  <meta name="description" content="Požadavky NIS2 na poskytovatele telemedicíny, monitorování pacientů a zdravotnických aplikací v Česku. Deadline 2026, povinné šifrování dat, audit řetězce dodávek.">
+  <link rel="canonical" href="https://nis2-nastroje.cz/sektory/telemedicine.html">
+  <meta property="og:title" content="NIS2 pro telehealth platformy v ČR – Povinnosti 2026">
+  <meta property="og:description" content="Požadavky NIS2 na poskytovatele telemedicíny, monitorování pacientů a zdravotnických aplikací v Česku. Deadline 2026, povinné šifrování dat, audit řetězce dodávek.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://nis2-nastroje.cz/sektory/telemedicine.html">
+  <meta property="og:locale" content="cs_CZ">
+  <meta property="og:site_name" content="NIS2-Nastroje.cz">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="NIS2 pro telehealth platformy v ČR – Povinnosti 2026">
+  <meta name="twitter:description" content="Požadavky NIS2 na poskytovatele telemedicíny, monitorování pacientů a zdravotnických aplikací v Česku. Deadline 2026, povinné šifrování dat, audit řetězce dodávek.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Domovská stránka",
+      "item": "https://nis2-nastroje.cz/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Sektory",
+      "item": "https://nis2-nastroje.cz/sektory/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "NIS2 pro poskytovatele telemedicíny v České republice – Povinnosti pro důležité subjekty",
+      "item": "https://nis2-nastroje.cz/sektory/telemedicine.html"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Jakou lhůtu mám na hlášení incidentu NÚKIB, který způsobil výpadek naší telehealth platformy na 45 minut?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Musíte hlásit do 24 hodin od detekce incidentu. Výpadek trvající 45 minut kvalifikuje se jako hlášení, protože překročil prahovou hranici 30 minut ovlivňující kontinuitu péče. Hlášení musí obsahovat čas detekce, čas nápravy, počet postižených pacientů a okamžitá nápravná opatření."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Potřebuji end-to-end šifrování všech zpráv v chatovací části naší telemedicínské aplikace?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ano. Všechny zdravotnické komunikace, včetně textových zpráv mezi pacientem a lékařem, musí být chráněny end-to-end šifrováním (minimálně dle standardů jako Signal Protocol nebo WhatsApp-style encryption). Transport-level TLS sám nestačí, protože neposkytuje ochranu before a after transmission. Minimálně TLS 1.2 je povinný, ale E2E je Standard de facto."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jaké jsou sankce za nedodržení NIS2 povinností jako operátor telehealth platformy v ČR do roku 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pokud nesplníte povinnosti NIS2 do 31. března 2026, NÚKIB vám může uložit pokutu až do 10 milionů Kč nebo 2 % ročního obratu (podle toho, který je vyšší), a to na základě čl. 181/2014 Sb. Navíc může dojít k zákazu poskytování služeb a k administrativním opatřením v souladu s přílohou II-A."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__logo">NIS2<span>Nástroje</span>.cz</a>
+      <ul class="nav__links">
+        <li><a href="../porownanie.html">Porovnání nástrojů</a></li>
+        <li><a href="../kalkulator.html">Kalkulátor NIS2</a></li>
+        <li><a href="../faq.html">FAQ</a></li>
+      </ul>
+      <a href="../kalkulator.html" class="nav__cta">Zjistit zda se vás týká →</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container" style="padding-top:1.5rem;">
+  <div class="breadcrumb">
+    <a href="../index.html">Domovská stránka</a><span>›</span>
+    <a href="index.html">Sektory</a><span>›</span>
+    NIS2 pro poskytovatele telemedicíny v České republice – Povinnosti pro důležité subjekty
+  </div>
+</div>
+
+<!-- HERO -->
+<div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
+  <div class="container--narrow">
+    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Příloha II – důležitý subjekt</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 pro poskytovatele telemedicíny v České republice – Povinnosti pro důležité subjekty</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Tato stránka je určena operátorům telehealth platforem, poskytovatelům služeb vzdáleného monitorování pacientů a vývojářům zdravotnických aplikací v ČR. Naučíte se konkrétní technické a organizační povinnosti NIS2, které musí být splněny do 31. března 2026.</p>
+  </div>
+</div>
+
+<!-- WHO QUALIFIES -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Jako důležitý subjekt se musíte registrovat, pokud provozujete telehealth platformu, aplikaci pro vzdálené monitorování nebo digitální zdravotnickou aplikaci se sídlem v ČR a zpracováváte zdravotní data více než 100 000 pacientů, nebo jste kritickou součástí poskytování zdravotní péče v regionu. Platí také pokud integrujete vaši platformu s elektronickými zdravotnickými záznamy nemocnic nebo poskytujete služby zdravotnickým zařízením, která jsou sama důležitými subjekty.</p>
+  </div>
+</div>
+
+<!-- OBLIGATIONS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1.25rem;">Klíčové povinnosti NIS2 pro tento sektor</h2>
+  <div style="border-top:1px solid var(--gray-100);">
+    
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Šifrování dat pacientů při přenosu přes video a zasílání zpráv</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Všechny video konzultace, texové zprávy a zdravotnická data vysílená přes vaši platformu musí být chráněna end-to-end šifrováním (minimálně TLS 1.2 pro transport, ideálně E2E pro citlivé komunikace). Musíte provádět měsíční audity konfigurace SSL/TLS certifikátů a mít politiku pro rotaci šifrovacích klíčů. Dokumentujte všechny šifrovací standardy v matici bezpečnosti a předkládejte ji NÚKIB na vyžádání.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Zásady zpracování osobních údajů zdravotnického charakteru a soulad GDPR + NIS2</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Musíte uzavřít formální smlouvy o zpracování údajů (DPA) se všemi subdodavateli, včetně cloudových poskytovatelů, vývojářů třetích stran a poskytovatele SMS brány. Každá smlouva musí jasně definovat bezpečnostní povinnosti, včetně incident reporting, šifrování a auditování. Minimálně jedenkrát ročně provádějte kontrolu shody s příslušnými články GDPR (články 9, 28–35) a zveřejňujte Registr činností zpracování (RZO) pro inspekci.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Bezpečnost řetězce dodávek a audity integrací s nemocničními EHR systémy</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Musíte provádět roční bezpečnostní audity všech API a integračních bodů, které vaše platforma sdílí s nemocničními informačními systémy. Zejména kontrolujte autentifikaci, autorizaci a šifrování dat při přenosu mezi vaší platformou a EHR. Udržujte seznam všech třetích stran s přístupem k pacientským údajům a provádějte u nich bezpečnostní dotazníky s minimální frekvencí jedenkrát za 18 měsíců.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Hlášení incidentů ovlivňujících kontinuitu péče a dostupnost služby</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Jakýkoli výpadek platformy, který brání přístupu k pacientským datům nebo znemožňuje poskytování telemedicínské služby po dobu delší než 30 minut, musí být hlášen NÚKIB do 24 hodin. Hlášení musí obsahovat: čas detekce, čas nápravy, počet postižených pacientů, klinický dopad a okamžitá nápravná opatření. Musíte mít plán kontinuity provozu (BCP) testovaný minimálně čtvrtletně.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Penetrační testy a hodnocení zranitelnosti zdravotnických aplikací</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Všechny vaše mobilní a webové aplikace určené pacientům nebo zdravotnickým pracovníkům musí projít externím penetračním testem minimálně jedenkrát za rok, a to od certifikovaného subjektu. Dodatečné testy jsou povinné po každé velkému updatu aplikace nebo změně v architektuře bezpečnosti. Musíte mít formální systém pro správu zjištěných zranitelností s časovými limity na nápravu (kritické: 7 dní, vysoké: 30 dní).</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TYPICAL GAPS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Typické mezery v souladu v tomto sektoru</h2>
+  <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
+    
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Vaše videokonferenční platforma není konfigurována s end-to-end šifrováním – často chybí šifrování na straně klienta nebo se používá pouze transport-level TLS bez šifrování obsahu.
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Zdravotnické aplikace nemají formální program penetračního testování a nejsou pravidelně auditovány externími bezpečnostními specialisty.
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Chybějí vám datové smlouvy (DPA) se všemi subdodavateli, zejména s cloudovými poskytovateli, vývojářskými týmy a API gateway poskytovateli.
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Vaš plán na řešení incidentů neobsahuje jasný mechanismus hlášení NÚKIB ve lhůtě 24 hodin a chybí vám testovaný plán kontinuity provozu.
+    </li>
+  </ul>
+</div>
+
+<!-- TOOLS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Doporučené nástroje pro tento sektor</h2>
+  <div style="display:grid;gap:1rem;">
+    
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">Sprinto</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">sprinto.com</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../nastroje/sprinto.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Zkontrolovat nástroj →</a>
+    </div>
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">Secfix</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">secfix.com</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../nastroje/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Zkontrolovat nástroj →</a>
+    </div>
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">Drata</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">drata.com</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../nastroje/drata.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Zkontrolovat nástroj →</a>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem;" itemscope itemtype="https://schema.org/FAQPage">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Často kladené otázky</h2>
+  <div style="border-top:1px solid var(--gray-100);">
+    
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Jakou lhůtu mám na hlášení incidentu NÚKIB, který způsobil výpadek naší telehealth platformy na 45 minut?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Musíte hlásit do 24 hodin od detekce incidentu. Výpadek trvající 45 minut kvalifikuje se jako hlášení, protože překročil prahovou hranici 30 minut ovlivňující kontinuitu péče. Hlášení musí obsahovat čas detekce, čas nápravy, počet postižených pacientů a okamžitá nápravná opatření.</p>
+    </div>
+  </div>
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Potřebuji end-to-end šifrování všech zpráv v chatovací části naší telemedicínské aplikace?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Ano. Všechny zdravotnické komunikace, včetně textových zpráv mezi pacientem a lékařem, musí být chráněny end-to-end šifrováním (minimálně dle standardů jako Signal Protocol nebo WhatsApp-style encryption). Transport-level TLS sám nestačí, protože neposkytuje ochranu before a after transmission. Minimálně TLS 1.2 je povinný, ale E2E je Standard de facto.</p>
+    </div>
+  </div>
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Jaké jsou sankce za nedodržení NIS2 povinností jako operátor telehealth platformy v ČR do roku 2026?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Pokud nesplníte povinnosti NIS2 do 31. března 2026, NÚKIB vám může uložit pokutu až do 10 milionů Kč nebo 2 % ročního obratu (podle toho, který je vyšší), a to na základě čl. 181/2014 Sb. Navíc může dojít k zákazu poskytování služeb a k administrativním opatřením v souladu s přílohou II-A.</p>
+    </div>
+  </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div style="background:var(--navy);padding:3rem 1.25rem;text-align:center;margin-top:2rem;">
+  <div class="container--narrow">
+    <h2 style="color:#fff;font-size:1.4rem;margin:0 0 .75rem;">Zkontrolujte požadavky pro vaši organizaci</h2>
+    <p style="color:rgba(255,255,255,.75);margin:0 0 1.5rem;font-size:.95rem;">
+      NÚKIB/NIS2 · Česká republika · 2026
+    </p>
+    <a href="../kalkulator.html" style="display:inline-block;background:#16a34a;color:#fff;padding:.85rem 2.25rem;border-radius:8px;font-weight:700;font-size:1rem;text-decoration:none;">
+      Spustit kalkulátor →
+    </a>
+  </div>
+</div>
+
+<footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
+  <div class="container">
+    <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
+      © 2026 NIS2-Nastroje.cz · NÚKIB/NIS2 · NÚKIB
+      <br>Informacje mają charakter edukacyjny i nie stanowią porady prawnej.
+      <br><a href="../index.html" style="color:var(--gray-400);">Domovská stránka</a> ·
+      <a href="index.html" style="color:var(--gray-400);">Sektory</a> ·
+      <a href="../porownanie.html" style="color:var(--gray-400);">Porovnání nástrojů</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

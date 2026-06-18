@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIS2 pro průmyslové výrobce v ČR — Povinnosti do 2026</title>
+  <meta name="description" content="Kompletní průvodce NIS2 pro průmyslové výrobce. Segmentace OT/IT sítí, bezpečnost dodavatelů, hlášení incidentů. Deadline 2026.">
+  <link rel="canonical" href="https://nis2-nastroje.cz/sektory/manufacturing.html">
+  <meta property="og:title" content="NIS2 pro průmyslové výrobce v ČR — Povinnosti do 2026">
+  <meta property="og:description" content="Kompletní průvodce NIS2 pro průmyslové výrobce. Segmentace OT/IT sítí, bezpečnost dodavatelů, hlášení incidentů. Deadline 2026.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://nis2-nastroje.cz/sektory/manufacturing.html">
+  <meta property="og:locale" content="cs_CZ">
+  <meta property="og:site_name" content="NIS2-Nastroje.cz">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="NIS2 pro průmyslové výrobce v ČR — Povinnosti do 2026">
+  <meta name="twitter:description" content="Kompletní průvodce NIS2 pro průmyslové výrobce. Segmentace OT/IT sítí, bezpečnost dodavatelů, hlášení incidentů. Deadline 2026.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Domovská stránka",
+      "item": "https://nis2-nastroje.cz/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Sektory",
+      "item": "https://nis2-nastroje.cz/sektory/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "NIS2 pro průmyslové výrobce v České republice — Povinnosti důležitých subjektů",
+      "item": "https://nis2-nastroje.cz/sektory/manufacturing.html"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Musíme aktualizovat všechny naše starší PLC a výrobní linky, když se nedají modernizovat?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ne — zákon požaduje bezpečnostní opatření proporcionální riziku a technické životnosti systému. U neaktualizovatelných systémů implementujte kompenzační kontroly: izolaci v síti, monitoring anomálií, omezení přístupu a povinné vzdělání operátorů. Dokumentujte odůvodnění ve svém risk assessment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jak často musíme aktualizovat inventarizaci OT zařízení?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "NÚKIB očekává aktuální inventář minimálně čtvrtletně; v prostředích s vysokou dynamikou (časta přidávání IoT senzorů) měsíčně. Automatizované skenování lze spouštět týdně. Inventář musí zahrnovat vendor, verzi firmware, poslední aktualizaci bezpečnosti a kritičnost zařízení."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jaké jsou pokuty za nesoulad s NIS2 do roku 2026 v ČR?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "NÚKIB může udělit správní pokuty až do 10 milionů Kč za závažné porušení (např. absence incident response plánu nebo neshody v OT segmentaci). V případě opakovaného porušení nebo když incident způsobí rozsáhlý dopad, může být pokuta vyšší. Deadline pro plnou implementaci je říjen 2026."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__logo">NIS2<span>Nástroje</span>.cz</a>
+      <ul class="nav__links">
+        <li><a href="../porownanie.html">Porovnání nástrojů</a></li>
+        <li><a href="../kalkulator.html">Kalkulátor NIS2</a></li>
+        <li><a href="../faq.html">FAQ</a></li>
+      </ul>
+      <a href="../kalkulator.html" class="nav__cta">Zjistit zda se vás týká →</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container" style="padding-top:1.5rem;">
+  <div class="breadcrumb">
+    <a href="../index.html">Domovská stránka</a><span>›</span>
+    <a href="index.html">Sektory</a><span>›</span>
+    NIS2 pro průmyslové výrobce v České republice — Povinnosti důležitých subjektů
+  </div>
+</div>
+
+<!-- HERO -->
+<div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
+  <div class="container--narrow">
+    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Příloha II — důležitý subjekt</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 pro průmyslové výrobce v České republice — Povinnosti důležitých subjektů</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Tato stránka je určena výrobcům s propojenými výrobními linkami, řídícími systémy PLC a infrastrukturou Průmyslu 4.0 v ČR. Dozví se zde konkrétní požadavky NÚKIB na zabezpečení OT/ICS, řízení dodavatelského řetězce a hlášení incidentů s ekonomickým dopadem.</p>
+  </div>
+</div>
+
+<!-- WHO QUALIFIES -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Povinnost zajišťovat NIS2 se týká průmyslových výrobců operujících v ČR, jejichž výrobní nebo logistické operace zahrnují připojené systémy řízení (PLC, SCADA, MES) a quorum je dosaženo prostřednictvím ekonomického vlivu či kritičnosti dodávek. Konkrétně jde o subjekty se značným tržním podílem, vysokou zaměstnaností nebo závislostí ostatních sektorů na jejich dodávkách.</p>
+  </div>
+</div>
+
+<!-- OBLIGATIONS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1.25rem;">Klíčové povinnosti NIS2 pro tento sektor</h2>
+  <div style="border-top:1px solid var(--gray-100);">
+    
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Segmentace a monitorování OT/IT sítí</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Oddělte výrobní řídící systémy (PLC, SCADA, robotika) od korporátní IT sítě pomocí industrálních firewallů a gateway zařízení. Zavádějte monitoring v reálném čase pro detekci anomálií v OT komunikaci; používejte protokoly jako Modbus, Profibus a Profinet pouze v izolovaných sítích. Implementujte zero-trust architekturu pro přístup mezi segmenty.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Řízení aktualizací a bezpečnostních záplat OT systémů</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Vytvořte procesní mapu všech OT součástí (včetně starších PLC a IoT senzorů) a stanovte cykly testování bezpečnostních záplat v izolovaném prostředí před nasazením. Udržujte kontakt s výrobci pro informace o CVE; u systémů, které nelze aktualizovat, implementujte kompenzační opatření (virtuální patching, monitoring). Dokumentujte veškeré odklady instalace záplat s odůvodněním.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Bezpečnost dodavatelského řetězce — výrobci komponent a firmwaru</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Zavedete smluvní a technické kontroly pro všechny dodavatele OT komponent, firmware a služeb vzdálené údržby. Požadujte od nich prohlášení o NIS2 souladu, bezpečnostní audity a kontrolu vzniku softwaru. Omezte přístup třetích stran k výrobním systémům pouze na definovaná okna a vyžadujte autentizaci vícefaktorovou.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Hlášení incidentů v OT s ekonomickým dopadem</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Incidenty s dopadem na dostupnost výroby po dobu přesahující 4 hodiny nebo způsobující ztrátu více než 5 % kapacity se hlašují NÚKIB bez zbytečného odkladu. Vytvořte incident response tým specialista na OT; zaznamenávejte všechny bezpečnostní porušení, pokusy o průnik a anomálie. Uchovávejte záznamy (logy) minimálně 12 měsíců.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Inventarizace a zjišťování aktiv v IoT a OT environmentu</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Vedete úplný soupis všech připojených zařízení včetně PLC, čidel, kamer, dronů a IoT modulů; zaznamenejte IP adresy, MAC adresy, verze firmware a vlastníky. Používejte nmap, Shodan API nebo specializované OT skenery pro pravidelné skenování; identifikujte neznámá nebo stínová zařízení. Aktualizujte inventář minimálně čtvrtletně.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TYPICAL GAPS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Typické mezery v souladu v tomto sektoru</h2>
+  <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
+    
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Připojení starých PLC a řídících jednotek přímo do podnikové sítě bez segmentace nebo proxy; IP adresy jsou dostupné z interní LAN bez kontroly.
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Absence procesního řízení bezpečnostních aktualizací pro OT — výrobci komponent dodávají bezpečnostní záplaty, ale není plán nebo testovací prostředí pro jejich validaci.
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Vzdálená údržba přes nezabezpečené protokoly (Telnet, HTTP bez HTTPS) nebo přes VPN sdílené s více údržbáři; chybí MFA a audit logu.
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Chybí centrální inventarizace IoT a OT zařízení; běžný scénář: IT tým zná kancelářské počítače, ale výrobní inženýři nasazují čidla a moduly bez IT vědomí.
+    </li>
+  </ul>
+</div>
+
+<!-- TOOLS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Doporučené nástroje pro tento sektor</h2>
+  <div style="display:grid;gap:1rem;">
+    
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">ISMS.online</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">isms.online</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../nastroje/isms-online.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Zkontrolovat nástroj →</a>
+    </div>
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">Secfix</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">secfix.com</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../nastroje/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Zkontrolovat nástroj →</a>
+    </div>
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">Reglyze</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">reglyze.com</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../nastroje/reglyze.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Zkontrolovat nástroj →</a>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem;" itemscope itemtype="https://schema.org/FAQPage">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Často kladené otázky</h2>
+  <div style="border-top:1px solid var(--gray-100);">
+    
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Musíme aktualizovat všechny naše starší PLC a výrobní linky, když se nedají modernizovat?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Ne — zákon požaduje bezpečnostní opatření proporcionální riziku a technické životnosti systému. U neaktualizovatelných systémů implementujte kompenzační kontroly: izolaci v síti, monitoring anomálií, omezení přístupu a povinné vzdělání operátorů. Dokumentujte odůvodnění ve svém risk assessment.</p>
+    </div>
+  </div>
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Jak často musíme aktualizovat inventarizaci OT zařízení?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">NÚKIB očekává aktuální inventář minimálně čtvrtletně; v prostředích s vysokou dynamikou (časta přidávání IoT senzorů) měsíčně. Automatizované skenování lze spouštět týdně. Inventář musí zahrnovat vendor, verzi firmware, poslední aktualizaci bezpečnosti a kritičnost zařízení.</p>
+    </div>
+  </div>
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Jaké jsou pokuty za nesoulad s NIS2 do roku 2026 v ČR?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">NÚKIB může udělit správní pokuty až do 10 milionů Kč za závažné porušení (např. absence incident response plánu nebo neshody v OT segmentaci). V případě opakovaného porušení nebo když incident způsobí rozsáhlý dopad, může být pokuta vyšší. Deadline pro plnou implementaci je říjen 2026.</p>
+    </div>
+  </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div style="background:var(--navy);padding:3rem 1.25rem;text-align:center;margin-top:2rem;">
+  <div class="container--narrow">
+    <h2 style="color:#fff;font-size:1.4rem;margin:0 0 .75rem;">Zkontrolujte požadavky pro vaši organizaci</h2>
+    <p style="color:rgba(255,255,255,.75);margin:0 0 1.5rem;font-size:.95rem;">
+      NÚKIB/NIS2 · Česká republika · 2026
+    </p>
+    <a href="../kalkulator.html" style="display:inline-block;background:#16a34a;color:#fff;padding:.85rem 2.25rem;border-radius:8px;font-weight:700;font-size:1rem;text-decoration:none;">
+      Spustit kalkulátor →
+    </a>
+  </div>
+</div>
+
+<footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
+  <div class="container">
+    <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
+      © 2026 NIS2-Nastroje.cz · NÚKIB/NIS2 · NÚKIB
+      <br>Informacje mają charakter edukacyjny i nie stanowią porady prawnej.
+      <br><a href="../index.html" style="color:var(--gray-400);">Domovská stránka</a> ·
+      <a href="index.html" style="color:var(--gray-400);">Sektory</a> ·
+      <a href="../porownanie.html" style="color:var(--gray-400);">Porovnání nástrojů</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
