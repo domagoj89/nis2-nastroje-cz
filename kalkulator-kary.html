@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulátor pokut NIS2 — jaké je riziko vaší firmy? | NIS2-Nastroje.cz</title>
+  <meta name="description" content="Vypočítejte maximální pokutu za nedodržení NIS2. Kalkulator založen na zákoně o kybernetické bezpečnosti. Kritické subjekty: do €10M nebo 2% obratu.">
+  <link rel="canonical" href="https://nis2-nastroje.cz/kalkulator-pokuty.html">
+  <meta property="og:title" content="Kalkulátor pokut NIS2 — jaké je riziko vaší firmy?">
+  <meta property="og:description" content="Kolik může stát nedodržení NIS2? Vypočítejte maximální pokutu na základě obratu a typu subjektu. Ověřte si před termínem 3. října 2026.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nis2-nastroje.cz/kalkulator-pokuty.html">
+  <meta property="og:image" content="https://nis2-nastroje.cz/og-image.png">
+  <meta property="og:locale" content="cs_CZ">
+  <meta property="og:site_name" content="NIS2-Nastroje.cz">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kalkulátor pokut NIS2 — jaké je riziko vaší firmy?">
+  <meta name="twitter:description" content="Vypočítejte maximální pokutu za nedodržení NIS2 na základě obratu vaší firmy.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Kalkulátor pokut NIS2",
+    "description": "Kalkulator maximálních pokut za porušení zákona o kybernetické bezpečnosti (transpozice směrnice NIS2) pro české firmy",
+    "url": "https://nis2-nastroje.cz/kalkulator-pokuty.html",
+    "applicationCategory": "FinanceApplication",
+    "author": {"@type": "Organization", "name": "NIS2-Nastroje.cz"}
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Domů", "item": "https://nis2-nastroje.cz/"},
+      {"@type": "ListItem", "position": 2, "name": "Kalkulátor pokut NIS2", "item": "https://nis2-nastroje.cz/kalkulator-pokuty.html"}
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">NIS2<span>Nastroje</span>.cz</a>
+      <ul class="nav__links">
+        <li><a href="porownanie.html">Porovnání nástrojů</a></li>
+        <li><a href="sektory-ksc.html">Sektory NIS2</a></li>
+        <li><a href="kalkulator.html">Kalkulátor NIS2</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+      <a href="kalkulator.html" class="nav__cta">Ověřit si status →</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container" style="padding-top:1.5rem;">
+  <div class="breadcrumb">
+    <a href="index.html">Domů</a><span>›</span>
+    Kalkulátor pokut NIS2
+  </div>
+</div>
+
+<!-- Hero -->
+<div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
+  <div class="container--narrow">
+    <span class="eyebrow">Výpočetní nástroj</span>
+    <h1 style="font-size:clamp(1.5rem,3.5vw,2.25rem);margin:.5rem 0 1rem;">
+      Kalkulátor pokut NIS2<br>— jaké je riziko vaší firmy?
+    </h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);margin-bottom:1.25rem;">
+      Vypočítejte maximální správní pokutu za nedodržení zákona o kybernetické bezpečnosti. Pokuty vycházejí ze zákona o kybernetické bezpečnosti (transpozice článků 32–33 směrnice NIS2).
+    </p>
+    <div class="alert alert--red" style="margin:0;">
+      <div class="alert__icon">⚠️</div>
+      <div class="alert__text">
+        <strong>Lhůta pro samoidentifikaci: 3. października 2026</strong>
+        Zbývá <strong><span data-countdown="days">—</span> dní</strong>.
+        Po termínu mohou orgány ukládat pokuty za nezaregistrování.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container--narrow" style="padding:2.5rem 1.25rem;">
+
+  <!-- Calculator card -->
+  <div style="background:var(--white);border:2px solid var(--gray-200);border-radius:14px;padding:2rem;margin-bottom:2rem;box-shadow:var(--shadow-md);">
+    <h2 style="margin:0 0 1.5rem;font-size:1.2rem;">Údaje vaší firmy</h2>
+
+    <!-- Entity type -->
+    <div style="margin-bottom:1.75rem;">
+      <p style="font-size:.9rem;font-weight:700;color:var(--gray-700);margin-bottom:.75rem;">
+        Typ subjektu NIS2
+      </p>
+      <div style="display:flex;flex-direction:column;gap:.5rem;" id="entity-buttons">
+        <label style="display:flex;align-items:flex-start;gap:.75rem;padding:.85rem 1rem;border:2px solid var(--gray-200);border-radius:8px;cursor:pointer;transition:border-color .15s;" id="label-kluczowy">
+          <input type="radio" name="entity" value="kluczowy" style="margin-top:.15rem;flex-shrink:0;">
+          <span>
+            <strong style="color:var(--red);">Kritický subjekt</strong>
+            <span style="display:block;font-size:.8rem;color:var(--gray-500);">Sektor Příloha I + velký nebo střední podnik. Pokuta: do €10 000 000 nebo 2% obratu.</span>
+          </span>
+        </label>
+        <label style="display:flex;align-items:flex-start;gap:.75rem;padding:.85rem 1rem;border:2px solid var(--gray-200);border-radius:8px;cursor:pointer;transition:border-color .15s;" id="label-wazny">
+          <input type="radio" name="entity" value="wazny" style="margin-top:.15rem;flex-shrink:0;">
+          <span>
+            <strong style="color:#b45309;">Důležitý subjekt</strong>
+            <span style="display:block;font-size:.8rem;color:var(--gray-500);">Sektor Příloha I (střední) nebo Příloha II. Pokuta: do €7 000 000 nebo 1,4% obratu.</span>
+          </span>
+        </label>
+        <label style="display:flex;align-items:flex-start;gap:.75rem;padding:.85rem 1rem;border:2px solid var(--gray-200);border-radius:8px;cursor:pointer;transition:border-color .15s;" id="label-other">
+          <input type="radio" name="entity" value="other" style="margin-top:.15rem;flex-shrink:0;" checked>
+          <span>
+            <strong>Nevím / mimo sektory NIS2</strong>
+            <span style="display:block;font-size:.8rem;color:var(--gray-500);">Využijte <a href="kalkulator.html">kalkulátor NIS2</a> pro ověření vašeho statusu.</span>
+          </span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Revenue slider -->
+    <div class="calc-control">
+      <label>
+        Roční obrat firmy
+        <span id="revenue-val">50 mln Kč</span>
+      </label>
+      <input type="range" class="calc-slider" id="revenue-slider"
+             min="1" max="500" step="1" value="50">
+      <div style="display:flex;justify-content:space-between;font-size:.72rem;color:var(--gray-500);margin-top:.25rem;">
+        <span>1 mln Kč</span>
+        <span>500 mln Kč</span>
+      </div>
+    </div>
+
+    <!-- EUR rate note -->
+    <p style="font-size:.75rem;color:var(--gray-500);margin-bottom:1.5rem;">
+      Přepočet EUR/Kč: 25,0 (orientační kurs). Pokuty NIS2 se ukládají v EUR.
+    </p>
+
+    <!-- Result -->
+    <div id="calc-result" class="penalty-result" style="display:none;">
+      <div class="penalty-result__label">Maximální správní pokuta NIS2</div>
+      <div class="penalty-result__amount" id="fine-amount">€ 0</div>
+      <div id="fine-basis" style="font-size:.78rem;color:#9f1239;margin-top:.35rem;"></div>
+    </div>
+
+    <div id="no-obligation-result" style="background:#f0fdf4;border:2px solid #86efac;border-radius:10px;padding:1.25rem 1.5rem;margin-top:1.5rem;text-align:center;">
+      <div style="font-size:1.5rem;margin-bottom:.35rem;">✅</div>
+      <strong style="color:#166534;">Vaša firma zřejmě nepodléhá NIS2</strong>
+      <p style="font-size:.82rem;color:var(--gray-600);margin:.4rem 0 0;">Vyberte typ subjektu výše nebo <a href="kalkulator.html">ověřte si v kalkulátoru NIS2</a>.</p>
+    </div>
+  </div>
+
+  <!-- Loss-aversion comparison -->
+  <div id="loss-aversion-box" style="display:none;margin-bottom:2rem;">
+    <h2 style="font-size:1.1rem;margin-bottom:1rem;">Pokuta vs. cena nástroje</h2>
+    <div class="two-col" style="gap:1rem;">
+      <div style="background:#fff1f2;border:2px solid #fecdd3;border-radius:10px;padding:1.25rem;text-align:center;">
+        <div style="font-size:.78rem;font-weight:700;text-transform:uppercase;color:#9f1239;margin-bottom:.35rem;">Maximální pokuta NIS2</div>
+        <div id="loss-fine" style="font-size:1.8rem;font-weight:800;color:var(--red);line-height:1.1;"></div>
+        <div style="font-size:.75rem;color:#9f1239;margin-top:.25rem;">za nedodržení</div>
+      </div>
+      <div style="background:#f0fdf4;border:2px solid #86efac;border-radius:10px;padding:1.25rem;text-align:center;">
+        <div style="font-size:.78rem;font-weight:700;text-transform:uppercase;color:#166534;margin-bottom:.35rem;">Cena nástroje NIS2</div>
+        <div style="font-size:1.8rem;font-weight:800;color:var(--green-dark);line-height:1.1;">od €0/rok</div>
+        <div style="font-size:.75rem;color:#166534;margin-top:.25rem;">např. Reglyze Free</div>
+      </div>
+    </div>
+    <div id="saving-highlight" style="background:var(--navy-dark);color:var(--white);border-radius:8px;padding:1rem 1.25rem;margin-top:.85rem;font-size:.88rem;text-align:center;"></div>
+  </div>
+
+  <!-- Methodology note -->
+  <div class="info-box" style="margin-bottom:2rem;">
+    <p><strong>Právní základ a metodologie:</strong> Pokuty jsou vypočteny na základě zákona o kybernetické bezpečnosti (transpozice směrnice NIS2 (2022/2555/EU)). Kalkulator zobrazuje <em>maximální</em> pokutu — organy dohledu mohou ukládat nižší pokuty s ohledem na závažnost porušení, dobu jeho trvání, stupeň zavinění a přijatá nápravná opatření. Výsledek není právní porada.</p>
+  </div>
+
+  <!-- FAQ mini -->
+  <h2 style="margin:2rem 0 1rem;">Nejčastější otázky o pokutách NIS2</h2>
+
+  <div class="faq-list">
+    <div class="faq-item">
+      <button class="faq-question">Za co přesně hrozí pokuty NIS2?</button>
+      <div class="faq-answer">
+        <p>Pokuty hrozí za: (1) nesplnění nebo nedostatečné plnění povinností vyplývajících ze správy bezpečnosti kybernetického prostředí, (2) nezaregistrování se jako kritický nebo důležitý subjekt ve lhůtě, (3) nejmenování osoby odpovídající za kybernetickou bezpečnost, (4) nehlášení závažných incidentů NÚKIB do 24 hodin, (5) znemožnění inspekce orgánem dohledu.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Jsou pokuty ukládány automaticky po 3. právách 2026?</button>
+      <div class="faq-answer">
+        <p>Ne. Pokuty ukládá orgán dohledu (příslušný pro daný sektor — např. NÚKIB) po provedení správního řízení. V praxi se první pokuty budou objevovat po kontrolách, které orgány plánují intenzivovat po lhůtě samoidentifikace (3.10.2026). Nezaregistrování se je samo o sobě porušením, které může vést ke správnímu řízení.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Je pokuta vždy maximum (€10M / €7M)?</button>
+      <div class="faq-answer">
+        <p>Ne. Organy posuzují: závažnost a dobu trvání porušení, stupeň zavinění, opatření přijatá subjektem ke zmírnění škod, předchozí porušení, způsobené finanční ztráty. Firmy, které dobrovolně implementovaly opatření a spolupracují s orgánem, mohou počítat s podstatně nižšími pokutami. Kalkulator zobrazuje zákonné maximum jako referenční bod, nikoli očekávanou částku.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Která firma je kritickým subjektem a která důležitým?</button>
+      <div class="faq-answer">
+        <p>Kritický subjekt: velký podnik (≥250 zaměstnanců NEBO ≥50 mln EUR obratu) působící v sektoru z Přílohy I (energie, doprava, bankovnictví, finance, zdravotnictví, vodní hospodářství, digitální infrastruktura, veřejná správa, vesmírné služby). Důležitý subjekt: střední podnik v sektoru Přílohy I, nebo firmy v sektorech Přílohy II. Využijte náš <a href="kalkulator.html">kalkulátor NIS2</a> pro přesné ověření vašeho statusu.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div style="background:var(--navy-dark);color:var(--white);padding:2rem;border-radius:10px;text-align:center;margin:2.5rem 0;">
+    <h3 style="color:var(--white);margin-bottom:.75rem;">Minimalizujte riziko pokuty</h3>
+    <p style="color:rgba(255,255,255,.8);margin-bottom:1.25rem;">
+      Zjistěte, které nástroje NIS2 se nejlépe hodí vaší firmě. Bezplatný start od €0.
+    </p>
+    <div style="display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap;">
+      <a href="porownanie.html" class="btn btn--primary">Porovnejte nástroje NIS2 →</a>
+      <a href="kalkulator.html" class="btn btn--outline" style="color:var(--white);border-color:rgba(255,255,255,.4);">Ověřte si status NIS2 →</a>
+    </div>
+    <div class="social-proof" style="justify-content:center;margin-top:1rem;">
+      <span class="social-proof__dot"></span>
+      <span>Více než <strong>6 000 českých firem</strong> si ověřilo status NIS2 na této stránce</span>
+    </div>
+  </div>
+
+</div><!-- end container--narrow -->
+
+<section class="cta-section">
+  <div class="container">
+    <h2>Nevíte, zda vaša firma podléhá NIS2?</h2>
+    <p>Náš bezplatný kalkulátor NIS2 zkontroluje sektor, velikost a obrat vaší firmy — a řekne vám, zda musíte jednat.</p>
+    <a href="kalkulator.html" class="btn btn--primary btn--lg">Spusťte kalkulátor NIS2 →</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__logo">NIS2<span>Nastroje</span>.cz</div>
+      <div class="footer__links">
+        <a href="index.html">Domů</a>
+        <a href="porownanie.html">Porovnání</a>
+        <a href="kalkulator.html">Kalkulátor NIS2</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+    </div>
+    <p class="footer__copy">© 2026 NIS2-Nastroje.cz</p>
+    <p class="footer__disclaimer">Kalkulator slouží výhradně informačním účelům. Výsledky nejsou právní poradou. V otázkách týkajících se konkrétních povinností a rizik vaší firmy se poraďte s právníkem specializujícím se na právo kybernetické bezpečnosti.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var EUR_CZK = 25.0;
+
+  var entityInputs = document.querySelectorAll('input[name="entity"]');
+  var revenueSlider = document.getElementById("revenue-slider");
+  var revenueVal = document.getElementById("revenue-val");
+  var calcResult = document.getElementById("calc-result");
+  var noObligation = document.getElementById("no-obligation-result");
+  var fineAmount = document.getElementById("fine-amount");
+  var fineBasis = document.getElementById("fine-basis");
+  var lossBox = document.getElementById("loss-aversion-box");
+  var lossFine = document.getElementById("loss-fine");
+  var savingHighlight = document.getElementById("saving-highlight");
+
+  var labels = {
+    kluczowy: document.getElementById("label-kluczowy"),
+    wazny: document.getElementById("label-wazny"),
+    other: document.getElementById("label-other")
+  };
+
+  function getEntity() {
+    for (var i = 0; i < entityInputs.length; i++) {
+      if (entityInputs[i].checked) return entityInputs[i].value;
+    }
+    return "other";
+  }
+
+  function formatEur(amount) {
+    if (amount >= 1000000) {
+      return "€ " + (amount / 1000000).toFixed(1).replace(".", ",") + " mln";
+    }
+    return "€ " + Math.round(amount).toLocaleString("cs-CZ");
+  }
+
+  function calculate() {
+    var entity = getEntity();
+    var revMlnCZK = parseInt(revenueSlider.value, 10);
+    var revEUR = (revMlnCZK * 1000000) / EUR_CZK;
+
+    revenueVal.textContent = revMlnCZK + " mln Kč";
+
+    // Highlight selected label
+    Object.keys(labels).forEach(function (k) {
+      labels[k].style.borderColor = k === entity ? "var(--navy)" : "var(--gray-200)";
+      labels[k].style.background = k === entity ? "#f0f6ff" : "";
+    });
+
+    if (entity === "other") {
+      calcResult.style.display = "none";
+      lossBox.style.display = "none";
+      noObligation.style.display = "block";
+      return;
+    }
+
+    noObligation.style.display = "none";
+    calcResult.style.display = "block";
+    lossBox.style.display = "block";
+
+    var maxFixed, pct, pctLabel;
+    if (entity === "kluczowy") {
+      maxFixed = 10000000;
+      pct = 0.02;
+      pctLabel = "2%";
+    } else {
+      maxFixed = 7000000;
+      pct = 0.014;
+      pctLabel = "1,4%";
+    }
+
+    var fineByPct = revEUR * pct;
+    var fine = Math.max(maxFixed, fineByPct);
+    var basisText;
+    if (fineByPct >= maxFixed) {
+      basisText = pctLabel + " obratu (" + formatEur(fineByPct) + ") > zákonný limit (" + formatEur(maxFixed) + ")";
+    } else {
+      basisText = "Zákonný limit: " + formatEur(maxFixed) + " (vyšší než " + pctLabel + " obratu = " + formatEur(fineByPct) + ")";
+    }
+
+    fineAmount.textContent = formatEur(fine);
+    fineBasis.textContent = basisText;
+    lossFine.textContent = formatEur(fine);
+
+    // Loss-aversion message
+    var toolCost = 149; // Reglyze Pro annual EUR
+    var ratio = Math.round(fine / toolCost);
+    savingHighlight.innerHTML = (
+      "Místo toho, aby jste riskovali pokutu <strong>" + formatEur(fine) + "</strong>, " +
+      "můžete dosáhnout shody s NIS2 za <strong>€" + toolCost + "/rok</strong> (Reglyze Pro). " +
+      "To je <strong>" + ratio.toLocaleString("cs-CZ") + "× levnější</strong> než maximální pokuta."
+    );
+  }
+
+  revenueSlider.addEventListener("input", calculate);
+  entityInputs.forEach(function (inp) {
+    inp.addEventListener("change", calculate);
+  });
+
+  calculate();
+})();
+</script>
+
+<script src="js/affiliate-links.js"></script>
+<!-- Sticky CTA bar -->
+<div class="sticky-cta" id="sticky-cta">
+  <div class="container" style="display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;">
+    <p style="margin:0;flex:1;min-width:200px;"><strong>Nevíte, zda vaša firma podléhá NIS2?</strong> Bezplatný kvíz trvá 2 minuty.</p>
+    <a href="kalkulator.html" class="btn btn--primary btn--sm">Absolvujte kvíz &rarr;</a>
+    <button class="sticky-cta__close" aria-label="Zavřít">&times;</button>
+  </div>
+</div>
+<!-- Exit intent overlay -->
+<div class="exit-overlay" id="exit-overlay">
+  <div class="exit-modal">
+    <button class="exit-modal__close" aria-label="Zavřít">&times;</button>
+    <h3>Stáhněte si bezplatný průvodce NIS2</h3>
+    <p>Zjistěte přesně, co musíte udělat do 3. října 2026. Krok za krokem průvodce pro české firmy.</p>
+    <form data-email-form="exit" style="display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1rem;">
+      <input type="email" name="email" placeholder="Vaša e-mailová adresa" required
+             style="flex:1;min-width:200px;padding:.75rem 1rem;border:1px solid #d1d5db;border-radius:8px;font-size:1rem;">
+      <button type="submit" class="btn btn--primary">Odeslat průvodce</button>
+    </form>
+    <p style="font-size:.8rem;color:#6b7280;margin-top:.75rem;">Bez spamu. Můžete se odhlásit kdykoli.</p>
+  </div>
+</div>
+<script src="js/site.js"></script>
+</body>
+</html>
