@@ -1,0 +1,23 @@
+{
+  "slug": "nis2-nastroje-cz",
+  "domain": "nis2-nastroje.cz",
+  "site_dir": "C:\\Users\\Uporabnik\\Passive-Income-Pipeline\\sites\\nis2-nastroje-cz",
+  "built_date": "2026-06-19",
+  "deploy_command": "cd C:\\Users\\Uporabnik\\Passive-Income-Pipeline\\sites\\nis2-nastroje-cz && git init && git add . && git commit -m 'initial build' && git push cloudflare main",
+  "cloudflare_project": "nis2-nastroje-cz",
+  "manual_tasks_before_launch": [
+    "Replace PLACEHOLDER in affiliate URL for Cyberday.ai: https://cyberday.ai/?ref=PLACEHOLDER",
+    "Replace PLACEHOLDER in affiliate URL for Vanta: https://www.vanta.com/?via=PLACEHOLDER",
+    "Replace PLACEHOLDER in affiliate URL for Sprinto: https://sprinto.com/?ref=PLACEHOLDER",
+    "Replace PLACEHOLDER in affiliate URL for Holm Security: https://holmsecurity.com/?ref=PLACEHOLDER",
+    "Replace PLACEHOLDER in affiliate URL for Cynomi: https://cynomi.com/?ref=PLACEHOLDER",
+    "Set up Lead-gen form (Warm lead sold to CZ IT consultancy at €30-50/lead) via: https://tally.so",
+    "Send partner outreach email to: Holm Security via https://holmsecurity.com/partners",
+    "Set up Google Adsense (Display ads — activate once traffic >200 visits/day) via: https://adsense.google.com"
+  ],
+  "manual_tasks_after_launch": [
+    "Submit nis2-nastroje.cz to Google Search Console",
+    "Submit nis2-nastroje.cz to Bing Webmaster Tools",
+    "Apply for Google Adsense (after 200+ daily visits)"
+  ]
+}

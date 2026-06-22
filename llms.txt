@@ -1,0 +1,56 @@
+# NIS2-Nastroje.cz
+
+> The only Czech-language independent comparison hub for NIS2/NÚKIB compliance tools — helping obligated Czech companies cut evaluation time from weeks to hours by providing localised, regulation-specific tool reviews, side-by-side feature matrices, and NÚKIB-aligned scoring so they choose the right software before enforcement deadlines hit
+
+NIS2-Nastroje.cz covers Cybersecurity Compliance (NIS2 Directive & NÚKIB Regulatory Tools for Czech SMEs and Enterprises) for CZ, SK.
+
+## Key pages
+- [Home](https://nis2-nastroje.cz/): NIS2-Nastroje.cz — NIS2 Directive & NÚKIB Regulatory Tools for Czech SMEs and Enterprises
+- [Alternativy k Cyberday.ai 2026](https://nis2-nastroje.cz/alternativy-cyberday.html)
+- [Alternativy k Cynomi 2026](https://nis2-nastroje.cz/alternativy-cynomi.html)
+- [Alternativy k Holm Security 2026](https://nis2-nastroje.cz/alternativy-holm-security.html)
+- [Alternativy k Sprinto 2026](https://nis2-nastroje.cz/alternativy-sprinto.html)
+- [Alternativy k Vanta 2026](https://nis2-nastroje.cz/alternativy-vanta.html)
+- [NIS2 Řetězec Dodavatelů: Bezpečnostní Požadavky a Implementace](https://nis2-nastroje.cz/bezpecnost-dodavatelskych-retezcu.html)
+- [ISO 27001 a NIS2 compliance: Průvodce pro české firmy](https://nis2-nastroje.cz/certifikace-iso-27001.html)
+- [Zásady cookies](https://nis2-nastroje.cz/cookies.html)
+- [Cyberday.ai vs Holm Security 2026](https://nis2-nastroje.cz/cyberday-vs-holm-security.html)
+- [Cyberday.ai vs Sprinto 2026](https://nis2-nastroje.cz/cyberday-vs-sprinto.html)
+- [Cyberday.ai vs Vanta 2026](https://nis2-nastroje.cz/cyberday-vs-vanta.html)
+- [Cyberday.ai recenze 2026](https://nis2-nastroje.cz/cyberday.html)
+- [Cynomi recenze 2026](https://nis2-nastroje.cz/cynomi.html)
+- [FAQ](https://nis2-nastroje.cz/faq.html)
+- [Holm Security recenze 2026](https://nis2-nastroje.cz/holm-security.html)
+- [Kalkulátor pokut NIS2](https://nis2-nastroje.cz/kalkulacka-pokut.html)
+- [Kalkulátor NIS2 2026](https://nis2-nastroje.cz/kalkulacka.html)
+- [Koho se NIS2 týká? Test pro české firmy 2026](https://nis2-nastroje.cz/kdo-musi-splnit.html)
+- [Kybernetické pojištění a NIS2: Chytrý risk management](https://nis2-nastroje.cz/kyberneticke-pojisteni.html)
+- [Metodologie hodnocení a politika afiliace](https://nis2-nastroje.cz/metodika.html)
+- [NIS2 compliance software pro Doprava a logistika](https://nis2-nastroje.cz/nis2-pro-dopravu.html)
+- [NIS2 compliance software pro Energetika a utilities](https://nis2-nastroje.cz/nis2-pro-energetiku.html)
+- [NIS2 compliance software pro Finanční sektor](https://nis2-nastroje.cz/nis2-pro-finance.html)
+- [NIS2 compliance software pro IT firmy a MSP](https://nis2-nastroje.cz/nis2-pro-it-firmy.html)
+- [NIS2 compliance software pro Kybernetičtí konzultanti](https://nis2-nastroje.cz/nis2-pro-konzultanty.html)
+- [NIS2 compliance software pro Malé a střední podniky](https://nis2-nastroje.cz/nis2-pro-male-firmy.html)
+- [NIS2 compliance software pro Zdravotnictví](https://nis2-nastroje.cz/nis2-pro-zdravotnictvi.html)
+- [Ochrana osobních údajů](https://nis2-nastroje.cz/ochrana-osobnich-udaju.html)
+- [Penetrační testování dle NIS2: Povinnost a implementace](https://nis2-nastroje.cz/penetracni-testovani.html)
+- [Průvodce NIS2 zákonem pro české firmy 2026](https://nis2-nastroje.cz/prehled-zakona.html)
+- [Nařízení 2024/2690: Průvodce pro poskytovatele MSP a cloud](https://nis2-nastroje.cz/provadeci-narizeni-nis2.html)
+- [Registrace u NUKIB – Průvodce NIS2 pro české společnosti](https://nis2-nastroje.cz/registrace-nis2.html)
+- [Sektory pokryté zákonem o kybernetické bezpečnosti/NIS2 v ČR 2026 – úplný seznam Příloha I a II](https://nis2-nastroje.cz/sektory-nis2.html)
+- [NIS2 Školení Kybernetické Bezpečnosti](https://nis2-nastroje.cz/skoleni-nis2.html)
+- [Sprinto vs Holm Security 2026](https://nis2-nastroje.cz/sprinto-vs-holm-security.html)
+- [Sprinto recenze 2026](https://nis2-nastroje.cz/sprinto.html)
+- [10 nejlepších nástrojů NIS2/zákon o kybernetické bezpečnosti 2026](https://nis2-nastroje.cz/srovnani.html)
+- [Vanta vs Holm Security 2026](https://nis2-nastroje.cz/vanta-vs-holm-security.html)
+- [Vanta vs Sprinto 2026](https://nis2-nastroje.cz/vanta-vs-sprinto.html)
+- [Vanta recenze 2026](https://nis2-nastroje.cz/vanta.html)
+
+## Collections
+- [nastroje/](https://nis2-nastroje.cz/nastroje/): 15 pages
+- [sektory/](https://nis2-nastroje.cz/sektory/): 31 pages
+
+## Notes
+- Independent, cs-language resource.
+- Content is free to cite with attribution + a link.

@@ -1,197 +1,52 @@
-(function () {
-  "use strict";
 
-  // ── Config ────────────────────────────────────────────────────────────────
-  var FORM_ENDPOINT = "/subscribe"; // Cloudflare Pages Function — functions/subscribe.js
-  var DEADLINE = new Date("2026-10-03T00:00:00");
-
-  // ── GA4 helper ───────────────────────────────────────────────────────────
-  function track(event, params) {
-    if (typeof gtag === "function") { gtag("event", event, params || {}); }
-  }
-
-  // ── Countdown timer ──────────────────────────────────────────────────────
-  function updateCountdowns() {
-    var now = new Date();
-    var diff = DEADLINE - now;
-    if (diff <= 0) { diff = 0; }
-    var days = Math.floor(diff / 86400000);
-    var hrs  = Math.floor((diff % 86400000) / 3600000);
-    var mins = Math.floor((diff % 3600000)  / 60000);
-
-    document.querySelectorAll("[data-countdown]").forEach(function (el) {
-      var mode = el.getAttribute("data-countdown");
-      if (mode === "days") {
-        el.textContent = days;
-      } else if (mode === "short") {
-        el.textContent = days + "d " + hrs + "h " + mins + "m";
-      } else {
-        el.textContent = days + " dni";
-      }
-    });
-
-    // Update deadline-counter blocks
-    document.querySelectorAll(".deadline-counter__days").forEach(function (el) {
-      el.textContent = days;
-    });
-  }
-
-  // ── Sticky CTA bar ───────────────────────────────────────────────────────
-  function initStickyCta() {
-    var bar = document.querySelector(".sticky-cta");
-    if (!bar) { return; }
-
-    var dismissed = false;
-    var closeBtn = bar.querySelector(".sticky-cta__close");
-
-    if (closeBtn) {
-      closeBtn.addEventListener("click", function () {
-        dismissed = true;
-        bar.classList.remove("visible");
-        try { sessionStorage.setItem("sticky_cta_dismissed", "1"); } catch (e) {}
-      });
-    }
-
-    try {
-      if (sessionStorage.getItem("sticky_cta_dismissed") === "1") {
-        dismissed = true;
-      }
-    } catch (e) {}
-
-    var shown = false;
-    window.addEventListener("scroll", function () {
-      if (dismissed) { return; }
-      var scrolled = window.scrollY || document.documentElement.scrollTop;
-      if (scrolled > 400 && !shown) {
-        bar.classList.add("visible");
-        shown = true;
-        track("sticky_cta_shown");
-      } else if (scrolled <= 400 && shown) {
-        bar.classList.remove("visible");
-        shown = false;
-      }
-    }, { passive: true });
-  }
-
-  // ── Exit intent overlay ──────────────────────────────────────────────────
-  function initExitIntent() {
-    var overlay = document.querySelector(".exit-overlay");
-    if (!overlay) { return; }
-
-    var modal    = overlay.querySelector(".exit-modal");
-    var closeBtn = overlay.querySelector(".exit-modal__close");
-    var skipLink = overlay.querySelector(".exit-modal__skip");
-    var form     = overlay.querySelector(".exit-modal__form");
-
-    var fired = false;
-
-    function dismiss() {
-      overlay.classList.remove("visible");
-      try { sessionStorage.setItem("exit_overlay_shown", "1"); } catch (e) {}
-    }
-
-    try {
-      if (sessionStorage.getItem("exit_overlay_shown") === "1") { fired = true; }
-    } catch (e) {}
-
-    if (closeBtn) { closeBtn.addEventListener("click", dismiss); }
-    if (skipLink) { skipLink.addEventListener("click", function (e) { e.preventDefault(); dismiss(); }); }
-
-    overlay.addEventListener("click", function (e) {
-      if (!modal || !modal.contains(e.target)) { dismiss(); }
-    });
-
-    document.addEventListener("mouseleave", function (e) {
-      if (fired || e.clientY > 10) { return; }
-      fired = true;
-      overlay.classList.add("visible");
-      track("exit_intent_shown");
-    });
-
-    if (form && FORM_ENDPOINT) {
-      form.addEventListener("submit", function (e) {
-        e.preventDefault();
-        var emailEl = form.querySelector('input[type="email"]');
-        if (!emailEl || !emailEl.value) { return; }
-        submitEmail(emailEl.value, "exit_overlay", function () {
-          form.innerHTML = '<p style="color:var(--green);font-weight:700;text-align:center;">✓ Zapisano. Sprawdź skrzynkę.</p>';
-          track("email_captured", { source: "exit_overlay" });
-        });
-      });
-    }
-  }
-
-  // ── Inline email form handler ────────────────────────────────────────────
-  function initEmailForms() {
-    document.querySelectorAll("[data-email-form]").forEach(function (form) {
-      if (!FORM_ENDPOINT) { return; }
-      var source = form.getAttribute("data-email-form") || "inline";
-      form.addEventListener("submit", function (e) {
-        e.preventDefault();
-        var emailEl = form.querySelector('input[type="email"]');
-        if (!emailEl || !emailEl.value) { return; }
-        var btn = form.querySelector("button[type='submit']");
-        if (btn) { btn.disabled = true; btn.textContent = "Wysyłanie..."; }
-        submitEmail(emailEl.value, source, function () {
-          var parent = form.parentElement;
-          if (parent) {
-            parent.innerHTML = '<p style="color:var(--green);font-weight:700;padding:.75rem 0;">✓ Zapisano! Sprawdź skrzynkę email.</p>';
-          }
-          track("email_captured", { source: source });
-        });
-      });
-    });
-  }
-
-  function submitEmail(email, source, onSuccess) {
-    if (!FORM_ENDPOINT) { return; }
-    fetch(FORM_ENDPOINT, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email: email, source: source, ts: new Date().toISOString() })
-    }).then(function (r) {
-      if (r.ok && onSuccess) { onSuccess(); }
-    }).catch(function () {});
-  }
-
-  // ── Social proof counters (simple static values) ─────────────────────────
-  function initSocialProof() {
-    document.querySelectorAll("[data-counter]").forEach(function (el) {
-      var target = parseInt(el.getAttribute("data-counter"), 10);
-      if (isNaN(target)) { return; }
-      var start = 0;
-      var duration = 1200;
-      var step = Math.ceil(target / (duration / 16));
-      var timer = setInterval(function () {
-        start += step;
-        if (start >= target) { start = target; clearInterval(timer); }
-        el.textContent = start.toLocaleString("pl-PL");
-      }, 16);
-    });
-  }
-
-  // ── Methodology accordion (review pages) ────────────────────────────────
-  function initMethodologyBoxes() {
-    document.querySelectorAll(".methodology-box").forEach(function (box) {
-      var toggle = box.querySelector(".methodology-toggle");
-      if (!toggle) { return; }
-      toggle.addEventListener("click", function () {
-        box.classList.toggle("open");
-        var expanded = box.classList.contains("open");
-        toggle.setAttribute("aria-expanded", expanded);
-      });
-    });
-  }
-
-  // ── Boot ─────────────────────────────────────────────────────────────────
-  document.addEventListener("DOMContentLoaded", function () {
-    updateCountdowns();
-    setInterval(updateCountdowns, 60000);
-    initStickyCta();
-    initExitIntent();
-    initEmailForms();
-    initSocialProof();
-    initMethodologyBoxes();
+// Cookie consent
+(function(){
+  if(localStorage.getItem('cookies_accepted')) return;
+  document.addEventListener('DOMContentLoaded', function(){
+    var b = document.getElementById('cookie-banner');
+    if(b) b.style.display='flex';
   });
-
 })();
+function acceptCookies(){localStorage.setItem('cookies_accepted','1');document.getElementById('cookie-banner').style.display='none';}
+function declineCookies(){document.getElementById('cookie-banner').style.display='none';}
+
+// Email subscribe
+function subscribeEmail(e){
+  e.preventDefault();
+  var form = e.target;
+  var email = form.querySelector('input[type=email]').value;
+  var btn = form.querySelector('button[type=submit]');
+  btn.disabled = true;
+  btn.textContent = 'Odesílám...';
+  fetch('/subscribe', {
+    method:'POST',
+    headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({email: email, source: 'comparison-gate'})
+  }).then(function(r){
+    btn.textContent = 'Hotovo!';
+    form.innerHTML = '<p style="color:#10b981;font-weight:600;">Zkontrolujte email — posíláme vám srovnání a seznam doporučených nástrojů.</p>';
+    localStorage.setItem('subscribed','1');
+    unlockContent();
+  }).catch(function(){
+    btn.disabled = false;
+    btn.textContent = 'Odeslat';
+  });
+}
+function unlockContent(){
+  document.querySelectorAll('.gated').forEach(function(el){el.style.display='block';});
+  var gate = document.getElementById('email-gate');
+  if(gate) gate.style.display='none';
+}
+document.addEventListener('DOMContentLoaded', function(){
+  if(localStorage.getItem('subscribed')) unlockContent();
+});
+
+// FAQ accordion
+document.addEventListener('DOMContentLoaded', function(){
+  document.querySelectorAll('.faq-item h3').forEach(function(h){
+    h.addEventListener('click', function(){
+      var p = this.nextElementSibling;
+      p.style.display = p.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+});
