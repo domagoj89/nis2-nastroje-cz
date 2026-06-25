@@ -119,66 +119,63 @@ function buildTags(body) {
 // Immediate sequence email — sent the moment someone subscribes
 async function sendSequenceEmail0(email, tier, env) {
   const EMAILS = {
-    A: {
-      subject: "Twój plan działania NIS2 — 3 dni, 3 kroki",
-      html: `<p style="font-family:sans-serif;font-size:15px;line-height:1.6;color:#111;">
-Właśnie ukończyłeś quiz NIS2 — Twój wynik wskazuje, że masz jeszcze dużo do zrobienia przed terminem.
+  "A": {
+    "subject": "Váš akční plán NIS2 — 3 dny, 3 kroky",
+    "html": "<p style=\"font-family:sans-serif;font-size:15px;line-height:1.6;color:#111;\">Právě jste dokončili kvíz NIS2 — váš výsledek ukazuje, že před terminem máte ještě hodně práce.
 <br><br>
-<strong>Dobra wiadomość:</strong> Firmy w podobnej sytuacji osiągają zgodność w 60–90 dni, jeśli zaczną od właściwych kroków.
+<strong>Dobrá zpráva:</strong> Firmy v podobné situaci dosahují shody za 60–90 dní, pokud začnou správnými kroky.
 </p>
-<h3 style="font-family:sans-serif;color:#1e3a5f;">Twój 3-dniowy plan startowy:</h3>
-<p style="font-family:sans-serif;font-size:15px;line-height:1.7;color:#111;">
-<strong>Dzień 1 (30 min) — Sprawdź status KSC:</strong><br>
-<a href="https://nis2-nastroje.cz/kalkulator.html" style="color:#1e3a5f;">Zweryfikuj czy Twoja firma podlega KSC →</a>
+<h3 style=\"font-family:sans-serif;color:#1e3a5f;\">Váš 3denní startovní plán:</h3>
+<p style=\"font-family:sans-serif;font-size:15px;line-height:1.7;color:#111;\">
+<strong>Den 1 (30 min) — Zjistěte, zda se vás ZKB týká:</strong><br>
+<a href=\"https://nis2-nastroje.cz/kalkulacka.html\" style=\"color:#1e3a5f;\">Ověřte, zda vaše firma podléhá ZKB →</a>
 <br><br>
-<strong>Dzień 2 (20 min) — Uruchom darmowy ISMS:</strong><br>
-<a href="https://isms.online/" style="color:#1e3a5f;">ISMS.online — bezpłatny plan do 25 pracowników →</a>
+<strong>Den 2 (20 min) — Spusťte bezplatný ISMS:</strong><br>
+<a href=\"https://isms.online/\" style=\"color:#1e3a5f;\">ISMS.online — bezplatný plán do 25 zaměstnanců →</a>
 <br><br>
-<strong>Dzień 3 (30 min) — Przeszkol zarząd:</strong><br>
-<a href="https://www.knowbe4.com/" style="color:#1e3a5f;">KnowBe4 — 14-dniowy trial →</a>
+<strong>Den 3 (30 min) — Proškolte vedení:</strong><br>
+<a href=\"https://nis2-nastroje.cz/skoleni-nis2.html\" style=\"color:#1e3a5f;\">Školení NIS2 — přehled možností →</a>
 <br><br>
-<a href="https://nis2-nastroje.cz/#tracker-section" style="color:#1e3a5f;">Śledź swój postęp w trackerze NIS2 →</a>
-</p>`,
-    },
-    B: {
-      subject: "Twój wynik NIS2: dobry start — oto co dobić do 100%",
-      html: `<p style="font-family:sans-serif;font-size:15px;line-height:1.6;color:#111;">
-Masz już podstawy NIS2 — to dobry znak. Brakuje Ci 2–3 elementów najczęściej sprawdzanych przez organ nadzoru.
+<a href=\"https://nis2-nastroje.cz/#tracker-section\" style=\"color:#1e3a5f;\">Sledujte svůj postup v NIS2 trackeru →</a>
+</p>"
+  },
+  "B": {
+    "subject": "Váš výsledek NIS2: dobrý základ — takto dotáhnete zbývající mezery",
+    "html": "<p style=\"font-family:sans-serif;font-size:15px;line-height:1.6;color:#111;\">Základy NIS2 máte zvládnuté — to je dobrý znak. Chybí vám 2–3 oblasti, které kontrolní orgány prověřují nejčastěji.
 </p>
-<p style="font-family:sans-serif;font-size:15px;line-height:1.7;color:#111;">
-<strong>Testy penetracyjne (Art. 21(2)(f)):</strong><br>
-<a href="https://cobalt.io/" style="color:#1e3a5f;">Cobalt.io — testy na żądanie →</a>
+<p style=\"font-family:sans-serif;font-size:15px;line-height:1.7;color:#111;\">
+<strong>Penetrační testování (čl. 21(2)(f)):</strong><br>
+<a href=\"https://nis2-nastroje.cz/penetracni-testovani.html\" style=\"color:#1e3a5f;\">Průvodce penetračním testováním →</a>
 <br><br>
-<strong>MFA dla kont uprzywilejowanych (Art. 21(2)(i)):</strong><br>
-<a href="https://1password.com/" style="color:#1e3a5f;">1Password Business — MFA + menedżer haseł →</a>
+<strong>MFA pro privilegované účty (čl. 21(2)(i)):</strong><br>
+<a href=\"https://nis2-nastroje.cz/nastroje/1password.html\" style=\"color:#1e3a5f;\">1Password Business — MFA + správce hesel →</a>
 <br><br>
-<strong>Bezpieczeństwo łańcucha dostaw (Art. 21(2)(d)):</strong><br>
-<a href="https://nis2-nastroje.cz/bezpecnost-dodavatelskych-retezcu.html" style="color:#1e3a5f;">Przewodnik bezpieczeństwa dostawców →</a>
+<strong>Bezpečnost dodavatelského řetězce (čl. 21(2)(d)):</strong><br>
+<a href=\"https://nis2-nastroje.cz/bezpecnost-dodavatelskych-retezcu.html\" style=\"color:#1e3a5f;\">Průvodce bezpečností dodavatelů →</a>
 <br><br>
-<a href="https://nis2-nastroje.cz/#tracker-section" style="color:#1e3a5f;">Zaznacz postęp w trackerze NIS2 →</a>
-</p>`,
-    },
-    C: {
-      subject: "Świetny wynik NIS2 — oto Twój ostatni krok",
-      html: `<p style="font-family:sans-serif;font-size:15px;line-height:1.6;color:#111;">
-Wysoki poziom gotowości NIS2 — naprawdę dobry wynik. Jeden niezałatwiony punkt: formalna walidacja zewnętrzna.
+<a href=\"https://nis2-nastroje.cz/#tracker-section\" style=\"color:#1e3a5f;\">Zaznačte postup v NIS2 trackeru →</a>
+</p>"
+  },
+  "C": {
+    "subject": "Skvělý výsledek NIS2 — zbývá jediný krok",
+    "html": "<p style=\"font-family:sans-serif;font-size:15px;line-height:1.6;color:#111;\">Vaše připravenost na NIS2 je na vysoké úrovni — opravdu dobrý výsledek. Zbývá jeden otevřený bod: formální externí validace.
 </p>
-<p style="font-family:sans-serif;font-size:15px;line-height:1.7;color:#111;">
-<strong>Test penetracyjny</strong> — dowód skuteczności zabezpieczeń (Art. 21(2)(f)):<br>
-<a href="https://cobalt.io/" style="color:#1e3a5f;">Cobalt.io →</a>
+<p style=\"font-family:sans-serif;font-size:15px;line-height:1.7;color:#111;\">
+<strong>Penetrační test</strong> — důkaz účinnosti zabezpečení (čl. 21(2)(f)):<br>
+<a href=\"https://cobalt.io/\" style=\"color:#1e3a5f;\">Cobalt.io →</a>
 <br><br>
-<strong>Certyfikacja ISO 27001</strong> — zewnętrzna walidacja całego ISMS:<br>
-<a href="https://nis2-nastroje.cz/certifikace-iso-27001.html" style="color:#1e3a5f;">Przewodnik ISO 27001 →</a>
+<strong>Certifikace ISO 27001</strong> — externí validace celého ISMS:<br>
+<a href=\"https://nis2-nastroje.cz/certifikace-iso-27001.html\" style=\"color:#1e3a5f;\">Průvodce certifikací ISO 27001 →</a>
 <br><br>
-<a href="https://nis2-nastroje.cz/#tracker-section" style="color:#1e3a5f;">Sprawdź ostatnie checkboxy →</a>
-</p>`,
-    },
-  };
+<a href=\"https://nis2-nastroje.cz/#tracker-section\" style=\"color:#1e3a5f;\">Zkontrolujte poslední checkboxy →</a>
+</p>"
+  }
+};
 
   const msg = EMAILS[tier] || EMAILS["B"];
   const footer = `<hr style="margin:2rem 0;border:none;border-top:1px solid #e5e7eb;">
 <p style="font-family:sans-serif;font-size:12px;color:#9ca3af;">
-  NIS2-Narzedzia.pl &nbsp;|&nbsp;
+  NIS2-Nastroje.cz &nbsp;|&nbsp;
   <a href="https://nis2-nastroje.cz/unsubscribe?email=${encodeURIComponent(email)}" style="color:#9ca3af;">Wypisz się</a>
 </p>`;
 
