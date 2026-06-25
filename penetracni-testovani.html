@@ -18,7 +18,55 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Penetrační testování dle NIS2: Povinnost a implementace", "description": "NIS2 článek 21(2)(f) vyžaduje roční penetrační testy. Návod pro české firmy: co testovat, jak vybrat poskytovatele, ceny a compliance.", "author": {"@type": "Organization", "name": "nis2-nastroje.cz"}, "datePublished": "2026-06-18", "dateModified": "2026-06-18"}</script>
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Musíme dělat penetrační test, pokud jsme malá firma?", "acceptedAnswer": {"@type": "Answer", "text": "Pokud spadáte pod NIS2 (operátor kritické infrastruktury nebo subjekt důležité pro ekonomiku), ano. Některé mikropodniky jsou vyjmuty, ale SME obvykle pokrývá NIS2. Ověřte si u <a href='https://www.nkod.cz' title='NUKIB'>NUKIBu</a>, zda spadáte pod NIS2. Pokud ano, penetrační test je právní povinnost, ne volba."}}, {"@type": "Question", "name": "Jaký je minimální rozsah penetračního testu pro compliance?", "acceptedAnswer": {"@type": "Answer", "text": "NIS2 nevyžaduje konkrétní rozsah, ale musíte testovat <strong>kritické systémy</strong>, které by mohly způsobit újmu zdraví, bezpečnosti, ekonomice či životnímu prostředí, pokud by selžely. To obvykle znamená: hlavní webové aplikace, API, autentizační systémy, datové úložiště. Konzultujte s auditoremMARTu, jaké systémy máte identifikovány jako kritické."}}, {"@type": "Question", "name": "Může si penetrační test udělat sám interní tým?", "acceptedAnswer": {"@type": "Answer", "text": "Pro NIS2 compliance <strong>ne</strong>. Regulátor očekává <strong>nezávislé testování od externího subjektu</strong> bez střetu zájmů. Interní testy jsou užitečné pro běžné monitorování, ale na prokázání compliance potřebujete certifikát od externí firmy (nebo <a href='https://cobalt.io' title='Cobalt.io'>Cobalt.io</a>)."}}, {"@type": "Question", "name": "Kolik času trvá penetrační test od objednávky do konečné zprávy?", "acceptedAnswer": {"@type": "Answer", "text": "Typicky 4–8 týdnů od objednávky: 1–2 týdny administrativa, 2–3 týdny vlastní test (paralelně), 1–2 týdny zpracování zprávy. U <a href='https://cobalt.io' title='PaaS řešení'>PaaS řešení (Cobalt.io)</a> to může být 3–4 týdny. <strong>Objednejte si test co nejdřív</strong> — poptávka je vysoká a sloty se obsazují měsíce dopředu."}}, {"@type": "Question", "name": "Co se stane, pokud penetrační test najde kritickou zranitelnost, kterou již exploituje útočník?", "acceptedAnswer": {"@type": "Answer", "text": "To se nestává často, ale pokud k tomu dojde, měli byste mít plán incidentu. Kontaktujte poskytovatele testu a <a href='https://www.nukib.cz' title='NUKIB'>NUKIB</a> pro okamžité podání incidentu. Penetrační test je právě pro to — aby se problémy našly <strong>dřív, než je budou exploitovat skutečné hrozby</strong>. Chraňuje vás."}}]}</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "url": "https://nis2-nastroje.cz/penetracni-testovani.html",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Musíme dělat penetrační test, pokud jsme malá firma?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pokud spadáte pod NIS2 (operátor kritické infrastruktury nebo subjekt důležité pro ekonomiku), ano. Některé mikropodniky jsou vyjmuty, ale SME obvykle pokrývá NIS2. Ověřte si u NUKIBu, zda spadáte pod NIS2. Pokud ano, penetrační test je právní povinnost, ne volba."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jaký je minimální rozsah penetračního testu pro compliance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "NIS2 nevyžaduje konkrétní rozsah, ale musíte testovat kritické systémy, které by mohly způsobit újmu zdraví, bezpečnosti, ekonomice či životnímu prostředí, pokud by selžely. To obvykle znamená: hlavní webové aplikace, API, autentizační systémy, datové úložiště. Konzultujte s auditoremMARTu, jaké systémy máte identifikovány jako kritické."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Může si penetrační test udělat sám interní tým?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pro NIS2 compliance ne. Regulátor očekává nezávislé testování od externího subjektu bez střetu zájmů. Interní testy jsou užitečné pro běžné monitorování, ale na prokázání compliance potřebujete certifikát od externí firmy (nebo Cobalt.io)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kolik času trvá penetrační test od objednávky do konečné zprávy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Typicky 4–8 týdnů od objednávky: 1–2 týdny administrativa, 2–3 týdny vlastní test (paralelně), 1–2 týdny zpracování zprávy. U PaaS řešení (Cobalt.io) to může být 3–4 týdny. Objednejte si test co nejdřív — poptávka je vysoká a sloty se obsazují měsíce dopředu."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Co se stane, pokud penetrační test najde kritickou zranitelnost, kterou již exploituje útočník?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "To se nestává často, ale pokud k tomu dojde, měli byste mít plán incidentu. Kontaktujte poskytovatele testu a NUKIB pro okamžité podání incidentu. Penetrační test je právě pro to — aby se problémy našly dřív, než je budou exploitovat skutečné hrozby. Chraňuje vás."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 

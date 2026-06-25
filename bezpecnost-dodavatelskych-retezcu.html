@@ -18,7 +18,55 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "NIS2 Řetězec Dodavatelů: Bezpečnostní Požadavky a Implementace", "description": "Kompletní průvodce bezpečností dodavatelů dle NIS2 článku 21(2)(d). Jak uzavřít smlouvy, posuzovat rizika a chránit svůj řetězec.", "author": {"@type": "Organization", "name": "nis2-nastroje.cz"}, "datePublished": "2026-06-18", "dateModified": "2026-06-18"}</script>
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Co se stane, když dodavatel nesouhlasí s bezpečnostním auditem?", "acceptedAnswer": {"@type": "Answer", "text": "Auditování je vaše právní právo dle NIS2. Pokud dodavatel odmítne, musíte zvážit jeho nahrazení nebo zvýšit monitoring (např. přes SecurityScorecard). Dokumentujte rozhodnutí – regulátoři jej mohou prověřit. V některých případech můžete provést audit přes třetí stranu nebo od jiného poskytovatele."}}, {"@type": "Question", "name": "Musím uzavřít nové smlouvy se všemi stávajícími dodavateli?", "acceptedAnswer": {"@type": "Answer", "text": "Pokud máte stávající smlouvu bez NIS2 prvků, měli byste ji aktualizovat formou dodatku. Není vždy potřeba úplná nová smlouva. Klíčové je začlenit povinnosti hlášení incidentů, audit práva a řízení subdodavatelů. Prioritizujte dodavatele s nejvyšším rizikem."}}, {"@type": "Question", "name": "Jak často musím přehodnocovat bezpečnost dodavatelů?", "acceptedAnswer": {"@type": "Answer", "text": "NIS2 vyžaduje <strong>minimálně jednou ročně</strong>. Vysokorizičné dodavatele (kritické systémy, data) by měly být monitorovány měsíčně přes platformy jako SecurityScorecard. Po incidentu, změně v jejich operacích nebo při podezření na kompromis opakujte posouzení okamžitě."}}, {"@type": "Question", "name": "Pokrývá NIS2 i naše subdodavatele (subdodavatele dodavatelů)?", "acceptedAnswer": {"@type": "Answer", "text": "Ano – přímě vás neřídí, ale MUSÍTE zajistit, aby je řídili vaši dodavatelé. Smlouvy se dodavateli musí obsahovat klauzuli, že oni přenesou stejné bezpečnostní povinnosti na své subdodavatele. Během auditů se ptejte na jejich seznam subdodavatelů a jejich bezpečnostní procesy."}}, {"@type": "Question", "name": "Jaké jsou typické pokuty za nesoulad s dodavatelským řetězcem NIS2?", "acceptedAnswer": {"@type": "Answer", "text": "Pokuty za porušení NIS2 čl. 21 se pohybují do <strong>10 milionů EUR</strong> nebo 2 % globálního obratu (podle toho, která částka je vyšší). Nejrizikovější situace je, když se stane incident u dodavatele a bude prokázáno, že jste jej adekvátně neposoudili ani nemonitorovali. Dokumentace vašeho programu je tedy klíčová pro obranu."}}]}</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "url": "https://nis2-nastroje.cz/bezpecnost-dodavatelskych-retezcu.html",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Co se stane, když dodavatel nesouhlasí s bezpečnostním auditem?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Auditování je vaše právní právo dle NIS2. Pokud dodavatel odmítne, musíte zvážit jeho nahrazení nebo zvýšit monitoring (např. přes SecurityScorecard). Dokumentujte rozhodnutí – regulátoři jej mohou prověřit. V některých případech můžete provést audit přes třetí stranu nebo od jiného poskytovatele."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Musím uzavřít nové smlouvy se všemi stávajícími dodavateli?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pokud máte stávající smlouvu bez NIS2 prvků, měli byste ji aktualizovat formou dodatku. Není vždy potřeba úplná nová smlouva. Klíčové je začlenit povinnosti hlášení incidentů, audit práva a řízení subdodavatelů. Prioritizujte dodavatele s nejvyšším rizikem."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jak často musím přehodnocovat bezpečnost dodavatelů?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "NIS2 vyžaduje minimálně jednou ročně. Vysokorizičné dodavatele (kritické systémy, data) by měly být monitorovány měsíčně přes platformy jako SecurityScorecard. Po incidentu, změně v jejich operacích nebo při podezření na kompromis opakujte posouzení okamžitě."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Pokrývá NIS2 i naše subdodavatele (subdodavatele dodavatelů)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ano – přímě vás neřídí, ale MUSÍTE zajistit, aby je řídili vaši dodavatelé. Smlouvy se dodavateli musí obsahovat klauzuli, že oni přenesou stejné bezpečnostní povinnosti na své subdodavatele. Během auditů se ptejte na jejich seznam subdodavatelů a jejich bezpečnostní procesy."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jaké jsou typické pokuty za nesoulad s dodavatelským řetězcem NIS2?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pokuty za porušení NIS2 čl. 21 se pohybují do 10 milionů EUR nebo 2 % globálního obratu (podle toho, která částka je vyšší). Nejrizikovější situace je, když se stane incident u dodavatele a bude prokázáno, že jste jej adekvátně neposoudili ani nemonitorovali. Dokumentace vašeho programu je tedy klíčová pro obranu."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
