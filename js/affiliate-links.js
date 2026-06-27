@@ -14,7 +14,7 @@ const AFFILIATE_MAP = [
   { match: "1password.com",  affiliate: "" },  // Same program as PL
   { match: "bitwarden.com",  affiliate: "" },  // Same program as PL
   { match: "bitdefender.com",  affiliate: "" },  // Same program as PL
-  { match: "acronis.com",  affiliate: "" },  // Same program as PL
+  { match: "acronis.com",  affiliate: "https://www.tkqlhce.com/click-101804169-13492976" },  // Same program as PL
 ];
 
 document.addEventListener("DOMContentLoaded", function () {
