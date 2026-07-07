@@ -47,9 +47,10 @@ NIS2-Nastroje.cz covers Cybersecurity Compliance (NIS2 Directive & NÚKIB Regula
 - [Vanta vs Sprinto 2026](https://nis2-nastroje.cz/vanta-vs-sprinto.html)
 - [Vanta recenze 2026](https://nis2-nastroje.cz/vanta.html)
 - [Stav NIS2 připravenosti českých firem 2026: Zákon platí, hodiny tikají](https://nis2-nastroje.cz/report-nis2-2022-2555-cz.html)
-- [Kalkulačka nákladů na NIS2](https://nis2-nastroje.cz/kalkulacka-nakladu-nis2.html)
+- [Kalkulátor nákladů na soulad s NIS2](https://nis2-nastroje.cz/kalkulacka-nakladu-nis2.html)
 - [Náklady na soulad s NIS2 v České republice 2026: Co firmy skutečně platí a co riskují, pokud neplatí](https://nis2-nastroje.cz/report-naklady-nis2.html)
 - [Srovnání nástrojů pro EU AI Act 2026](https://nis2-nastroje.cz/ai-act-nastroje.html)
+- [Srovnání nástrojů pro EAA přístupnost 2026](https://nis2-nastroje.cz/nastroje-pristupnosti-eaa.html)
 
 ## Collections
 - [nastroje/](https://nis2-nastroje.cz/nastroje/): 15 pages
