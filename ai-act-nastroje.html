@@ -34,7 +34,7 @@
     <li><a href="/kdo-musi-splnit.html">Koho se to týká?</a></li>
     <li><a href="/prehled-zakona.html">Zákon</a></li>
   </ul>
-<a href="/ai-act-nastroje.html" class="nav-link vp-navlink">Nástroje pro AI Act</a></nav>
+<a href="/ai-act-nastroje.html" class="nav-link vp-navlink-ai-act">Nástroje pro AI Act</a></nav>
 <main style="max-width:900px;margin:0 auto;padding:2.5rem 1.25rem;">
   <h1 style="font-size:2rem;line-height:1.15;margin:.25rem 0 .75rem;color:#0f172a;">EU AI Act: na koho se vztahuje a které nástroje pomáhají</h1>
   <p style="color:#475569;font-size:1.1rem;line-height:1.5;margin:0 0 1rem;">AI Act je unijní zákon regulující umělou inteligenci na základě míry rizika. Níže najdete skutečné termíny, rychlou kontrolu toho, zda se zákon vztahuje na vás, a nezávislý přehled nástrojů pro zajištění souladu.</p>
@@ -46,18 +46,7 @@
   <h2 style="font-size:1.4rem;margin:2.5rem 0 .25rem;">Vztahuje se na vás AI Act?</h2>
   <p style="color:#64748b;margin:0 0 1rem;">Čtyři otázky, orientační odpověď. Nejde o právní poradenství.</p>
   <form id="vp-form" style="display:grid;gap:1.25rem;">
-    <fieldset style="border:1px solid #e5e7eb;border-radius:12px;padding:1.1rem;">
-      <legend style="font-weight:700;padding:0 .5rem;">Jaká je vaše role v oblasti AI?</legend>
-      <div class="vp-opts"><label class="vp-opt"><input type="radio" name="role" value="provider" checked><span>Vyvíjíme nebo prodáváme systémy AI</span></label><label class="vp-opt"><input type="radio" name="role" value="deployer"><span>Využíváme systémy AI ve svém podnikání</span></label><label class="vp-opt"><input type="radio" name="role" value="none"><span>AI vůbec nevyužíváme</span></label></div></fieldset>
-    <fieldset style="border:1px solid #e5e7eb;border-radius:12px;padding:1.1rem;">
-      <legend style="font-weight:700;padding:0 .5rem;">Využíváte nebo vyvíjíte AI v některé z těchto oblastí: nábor zaměstnanců a hodnocení v HR, úvěrové skórování, vzdělávání, kritická infrastruktura, biometrie, zdravotnické prostředky, vymáhání práva?</legend>
-      <div class="vp-opts"><label class="vp-opt"><input type="radio" name="hr" value="no" checked><span>Ne</span></label><label class="vp-opt"><input type="radio" name="hr" value="yes"><span>Ano</span></label></div></fieldset>
-    <fieldset style="border:1px solid #e5e7eb;border-radius:12px;padding:1.1rem;">
-      <legend style="font-weight:700;padding:0 .5rem;">Poskytujete model AI pro obecné účely (např. vlastní jazykový model)?</legend>
-      <div class="vp-opts"><label class="vp-opt"><input type="radio" name="gpai" value="no" checked><span>Ne</span></label><label class="vp-opt"><input type="radio" name="gpai" value="yes"><span>Ano</span></label></div></fieldset>
-    <fieldset style="border:1px solid #e5e7eb;border-radius:12px;padding:1.1rem;">
-      <legend style="font-weight:700;padding:0 .5rem;">Komunikují vaši zákazníci s vaší AI přímo (chatbot, obsah generovaný AI)?</legend>
-      <div class="vp-opts"><label class="vp-opt"><input type="radio" name="facing" value="no" checked><span>Ne</span></label><label class="vp-opt"><input type="radio" name="facing" value="yes"><span>Ano</span></label></div></fieldset>
+    <fieldset style="border:1px solid #e5e7eb;border-radius:12px;padding:1.1rem;"><legend style="font-weight:700;padding:0 .5rem;">Jaká je vaše role v oblasti AI?</legend><div class="vp-opts"><label class="vp-opt"><input type="radio" name="role" value="provider" checked><span>Vyvíjíme nebo prodáváme systémy AI</span></label><label class="vp-opt"><input type="radio" name="role" value="deployer"><span>Využíváme systémy AI ve svém podnikání</span></label><label class="vp-opt"><input type="radio" name="role" value="none"><span>AI vůbec nevyužíváme</span></label></div></fieldset><fieldset style="border:1px solid #e5e7eb;border-radius:12px;padding:1.1rem;"><legend style="font-weight:700;padding:0 .5rem;">Využíváte nebo vyvíjíte AI v některé z těchto oblastí: nábor zaměstnanců a hodnocení v HR, úvěrové skórování, vzdělávání, kritická infrastruktura, biometrie, zdravotnické prostředky, vymáhání práva?</legend><div class="vp-opts"><label class="vp-opt"><input type="radio" name="hr" value="no" checked><span>Ne</span></label><label class="vp-opt"><input type="radio" name="hr" value="yes"><span>Ano</span></label></div></fieldset><fieldset style="border:1px solid #e5e7eb;border-radius:12px;padding:1.1rem;"><legend style="font-weight:700;padding:0 .5rem;">Poskytujete model AI pro obecné účely (např. vlastní jazykový model)?</legend><div class="vp-opts"><label class="vp-opt"><input type="radio" name="gpai" value="no" checked><span>Ne</span></label><label class="vp-opt"><input type="radio" name="gpai" value="yes"><span>Ano</span></label></div></fieldset><fieldset style="border:1px solid #e5e7eb;border-radius:12px;padding:1.1rem;"><legend style="font-weight:700;padding:0 .5rem;">Komunikují vaši zákazníci s vaší AI přímo (chatbot, obsah generovaný AI)?</legend><div class="vp-opts"><label class="vp-opt"><input type="radio" name="facing" value="no" checked><span>Ne</span></label><label class="vp-opt"><input type="radio" name="facing" value="yes"><span>Ano</span></label></div></fieldset>
     <button type="button" id="vp-check" style="background:#2563eb;color:#fff;border:0;border-radius:10px;padding:1rem;font-size:1.1rem;font-weight:700;cursor:pointer;">Zkontrolovat mé povinnosti</button>
   </form>
   <div id="vp-result" hidden style="margin-top:1.25rem;background:#f0f9ff;border:1px solid #bae6fd;border-radius:12px;padding:1.25rem;">
@@ -66,6 +55,7 @@
 
   <h2 style="font-size:1.4rem;margin:2.5rem 0 .25rem;">Nástroje pro zajištění souladu s AI Act a ISO 42001</h2>
   <p style="color:#64748b;margin:0 0 1rem;">Většina organizací zajišťuje soulad s AI Act stejným způsobem jako u NIS2 nebo ISO 27001: systémem řízení s evidencí, registry a kontrolními opatřeními. Tyto platformy takový přístup podporují; poslední dva jsou podnikové nástroje bez veřejně dostupného ceníku.</p>
+  
   <div style="overflow-x:auto;"><table style="width:100%;border-collapse:collapse;font-size:.92rem;">
     <thead><tr style="text-align:left;border-bottom:2px solid #e5e7eb;">
       <th style="padding:.6rem;">Nástroj</th><th style="padding:.6rem;">Podpora AI Act</th>
@@ -82,24 +72,26 @@
 <style>.vp-opts{display:grid;gap:.5rem;margin-top:.6rem}.vp-opt{display:flex;align-items:center;gap:.6rem;padding:.55rem .7rem;border:1px solid #e5e7eb;border-radius:8px;cursor:pointer}.vp-opt input{accent-color:#2563eb}
 table td{padding:.6rem;border-bottom:1px solid #eef2f7;vertical-align:top;color:#334155}</style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Na koho se EU AI Act vztahuje?", "acceptedAnswer": {"@type": "Answer", "text": "Na poskytovatele (vývojáře a prodejce) a nasazovatele (firemní uživatele) systémů AI využívaných v EU, bez ohledu na sídlo společnosti. Povinnosti se odvíjejí od míry rizika: většina použití AI s sebou nese pouze lehké povinnosti transparentnosti, zatímco vymezený seznam vysoce rizikových systémů podléhá přísným povinnostem."}}, {"@type": "Question", "name": "Jaké jsou sankce?", "acceptedAnswer": {"@type": "Answer", "text": "Až 35 milionů EUR nebo 7 procent celosvětového obratu za zakázané praktiky a až 15 milionů EUR nebo 3 procenta za většinu ostatních porušení."}}, {"@type": "Question", "name": "Co je ISO 42001 a proč se zmiňuje v tomto kontextu?", "acceptedAnswer": {"@type": "Answer", "text": "ISO/IEC 42001 je certifikovatelná norma systému řízení pro umělou inteligenci. Je to nejrozšířenější strukturovaný způsob přípravy na povinnosti vyplývající z AI Act, podobně jako se ISO 27001 využívá v rámci NIS2."}}, {"@type": "Question", "name": "Skutečně se termíny posunuly?", "acceptedAnswer": {"@type": "Answer", "text": "Ano. Dne 7. května 2026 dosáhly orgány EU politické dohody o odložení povinností pro vysoce rizikové systémy na 2. prosince 2027 (zabudované systémy na srpen 2028). Formální přijetí dosud neproběhlo, takže termíny považujte za téměř konečné, nikoli za definitivní. Povinnosti transparentnosti od 2. prosince 2026 posunuty nebyly."}}, {"@type": "Question", "name": "Potřebuji vůbec nějaký nástroj?", "acceptedAnswer": {"@type": "Answer", "text": "Ne nutně. Malý nasazovatel s jedním chatbotem si vystačí s interními politikami a kontrolními seznamy. Nástroje se vyplatí v případě, že spravujete více systémů AI, potřebujete evidenci pro audity nebo zákazníky, případně již zajišťujete soulad s ISO 27001 nebo NIS2 v rámci některé platformy."}}]}</script>
+
 <script>
 (function(){
-  var V={out:"Na základě vašich odpovědí vám AI Act pravděpodobně neukládá přímé povinnosti. Pokud začnete využívat nástroje AI, jako první se na vás vztáhnou pravidla transparentnosti.",tr:"Vztahují se na vás povinnosti transparentnosti: od 2. prosince 2026 se musí chatboti identifikovat jako AI a obsah generovaný umělou inteligencí musí být označen.",hr:"Pravděpodobně spadáte do kategorie vysokého rizika: plné povinnosti (řízení rizik, správa dat, lidský dohled, registrace) platí od 2. prosince 2027. Organizace tohoto typu zpravidla zahajují přípravu zavedením systému řízení podle ISO 42001 již nyní.",gp:"Povinnosti poskytovatele GPAI jsou již v platnosti (transparentnost, politika autorských práv, souhrny trénovacích dat).",dep:"Jako nasazovatel máte méně povinností než poskytovatel, avšak lidský dohled a gramotnost zaměstnanců v oblasti AI se na vás stále vztahují."};
+  var V={"v_deployer_note": "Jako nasazovatel máte méně povinností než poskytovatel, avšak lidský dohled a gramotnost zaměstnanců v oblasti AI se na vás stále vztahují.", "v_gpai": "Povinnosti poskytovatele GPAI jsou již v platnosti (transparentnost, politika autorských práv, souhrny trénovacích dat).", "v_highrisk": "Pravděpodobně spadáte do kategorie vysokého rizika: plné povinnosti (řízení rizik, správa dat, lidský dohled, registrace) platí od 2. prosince 2027. Organizace tohoto typu zpravidla zahajují přípravu zavedením systému řízení podle ISO 42001 již nyní.", "v_out": "Na základě vašich odpovědí vám AI Act pravděpodobně neukládá přímé povinnosti. Pokud začnete využívat nástroje AI, jako první se na vás vztáhnou pravidla transparentnosti.", "v_transparency": "Vztahují se na vás povinnosti transparentnosti: od 2. prosince 2026 se musí chatboti identifikovat jako AI a obsah generovaný umělou inteligencí musí být označen."};
+  var RULES=[{"if": {"gpai": "yes"}, "add": "v_gpai"}, {"if": {"hr": "yes"}, "add": "v_highrisk"}, {"if": {"facing": "yes"}, "add": "v_transparency"}, {"if": {"role": "deployer"}, "add": "v_deployer_note"}];
+  var DEFAULT="v_out";
+  var NAMES=["role", "hr", "gpai", "facing"];
   function val(n){var e=document.querySelector('input[name="'+n+'"]:checked');return e?e.value:null;}
   document.getElementById('vp-check').addEventListener('click',function(){
-    var role=val('role'),hr=val('hr'),gp=val('gpai'),fc=val('facing'),out=[];
-    if(role==='none'&&hr==='no'&&gp==='no'&&fc==='no'){out.push(V.out);}
-    else{
-      if(gp==='yes')out.push(V.gp);
-      if(hr==='yes')out.push(V.hr);
-      if(fc==='yes')out.push(V.tr);
-      if(role==='deployer')out.push(V.dep);
-      if(!out.length)out.push(V.out);
-    }
+    var ans={};NAMES.forEach(function(n){ans[n]=val(n);});
+    var out=[];
+    RULES.forEach(function(r){
+      var hit=Object.keys(r['if']).every(function(k){return ans[k]===r['if'][k];});
+      if(hit&&out.indexOf(V[r.add])===-1)out.push(V[r.add]);
+    });
+    if(!out.length)out.push(V[DEFAULT]);
     var ul=document.getElementById('vp-verdicts');ul.innerHTML='';
     out.forEach(function(t){var li=document.createElement('li');li.textContent=t;ul.appendChild(li);});
     var r=document.getElementById('vp-result');r.hidden=false;r.scrollIntoView({behavior:'smooth'});
-    if(window.gtag)gtag('event','ai_act_check',{role:role,highrisk:hr,gpai:gp,facing:fc});
+    if(window.gtag)gtag('event','ai_act_check',ans);
   });
 })();
 </script>
