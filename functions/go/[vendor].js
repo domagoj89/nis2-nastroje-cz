@@ -80,7 +80,7 @@ const MAP = {
     "subid_param": "subid"
   }
 };
-const GA = null;
+const GA = {"mid": "G-4D0Y8YWNF3", "secret": "QfSy4Xq2Ql6kPN8sJlsZ8Q"};
 
 export async function onRequestGet(context) {
   const { params, request } = context;
