@@ -51,6 +51,8 @@ NIS2-Nastroje.cz covers Cybersecurity Compliance (NIS2 Directive & NÚKIB Regula
 - [Náklady na soulad s NIS2 v České republice 2026: Co firmy skutečně platí a co riskují, pokud neplatí](https://nis2-nastroje.cz/report-naklady-nis2.html)
 - [Srovnání nástrojů pro EU AI Act 2026](https://nis2-nastroje.cz/ai-act-nastroje.html)
 - [Srovnání nástrojů pro EAA přístupnost 2026](https://nis2-nastroje.cz/nastroje-pristupnosti-eaa.html)
+- [NIS2 Startovací balíček, editovatelné šablony pro shodu](https://nis2-nastroje.cz/nis2-startovaci-balicek.html)
+- [Srovnání softwaru pro ISO 27001 2026](https://nis2-nastroje.cz/iso-27001-nastroje.html)
 
 ## Collections
 - [nastroje/](https://nis2-nastroje.cz/nastroje/): 15 pages
