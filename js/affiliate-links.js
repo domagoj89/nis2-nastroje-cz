@@ -3,7 +3,7 @@
 // No HTML edits needed: the script matches by vendor domain pattern.
 
 const AFFILIATE_MAP = [
-  { match: "reglyze.com",  affiliate: "" },  // Same program as PL
+  { match: "reglyze.com",  affiliate: "https://reglyze.com/" },  // Same program as PL
   { match: "secfix.com",  affiliate: "" },  // Same program as PL
   { match: "isms.online",  affiliate: "" },  // Same program as PL
   { match: "sprinto.com",  affiliate: "" },  // Same program as PL

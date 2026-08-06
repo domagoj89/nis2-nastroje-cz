@@ -11,18 +11,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NIS2 pro energetické operátory v ČR — compliance 2026</title>
-  <meta name="description" content="Povinnosti NIS2 pro elektrikárenské, distribuční a plynárenské společnosti. Deadline 2026. NÚKIB regulace.">
+  <title>NIS2 pro operátory energetiky v Česku – Zákon č. 264/2025 Sb. 2026</title>
+  <meta name="description" content="NIS2 povinnosti pro generátory elektřiny, operátory sítě a dodavatele plynu. Lhůta registrace 31.12.2025. Pokuty až 10 mil. EUR.">
   <link rel="canonical" href="https://nis2-nastroje.cz/sektory/energy.html">
-  <meta property="og:title" content="NIS2 pro energetické operátory v ČR — compliance 2026">
-  <meta property="og:description" content="Povinnosti NIS2 pro elektrikárenské, distribuční a plynárenské společnosti. Deadline 2026. NÚKIB regulace.">
+  <meta property="og:title" content="NIS2 pro operátory energetiky v Česku – Zákon č. 264/2025 Sb. 2026">
+  <meta property="og:description" content="NIS2 povinnosti pro generátory elektřiny, operátory sítě a dodavatele plynu. Lhůta registrace 31.12.2025. Pokuty až 10 mil. EUR.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-nastroje.cz/sektory/energy.html">
   <meta property="og:locale" content="cs_CZ">
   <meta property="og:site_name" content="NIS2-Nastroje.cz">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="NIS2 pro energetické operátory v ČR — compliance 2026">
-  <meta name="twitter:description" content="Povinnosti NIS2 pro elektrikárenské, distribuční a plynárenské společnosti. Deadline 2026. NÚKIB regulace.">
+  <meta name="twitter:title" content="NIS2 pro operátory energetiky v Česku – Zákon č. 264/2025 Sb. 2026">
+  <meta name="twitter:description" content="NIS2 povinnosti pro generátory elektřiny, operátory sítě a dodavatele plynu. Lhůta registrace 31.12.2025. Pokuty až 10 mil. EUR.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -46,7 +46,7 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "NIS2 pro operátory kritické infrastruktury — energetika a zásobování v České republice",
+      "name": "NIS2 pro energetiku, plyn a teplárenství v České republice – Nařízení 2026",
       "item": "https://nis2-nastroje.cz/sektory/energy.html"
     }
   ]
@@ -59,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Co přesně se rozumí pod pojmem 'fyzická segmentace' SCADA od kancelářní IT sítě?",
+      "name": "Jaká je přesná lhůta pro registraci a splnění technických opatření?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Fyzická segmentace znamená, že kabely sítě OT jsou vedeny odděleně, jsou napojeny do oddělených switchů a jejich připojení k IT síti je možné pouze přes brány (DMZ appliances) s hlubinnou inspekcí paketů. Tato brána musí vyžadovat alespoň dvoustupňovou autentizaci a loggovat všechny pokusy o přístup. Sítě nesmí sdílet žádné aktivní síťové prvky (routery, switche) na vrstvě 2/3."
+        "text": "Lhůta registrace u NÚKIB nebo samoobslužné registrace je 31. prosince 2025. Po registraci máte přibližně 12 měsíců na implementaci technických bezpečnostních opatření. Pro kritickou energetiku je důležité hlášení zahájit hned v listopadu 2025, abyste měli čas na plánování."
       }
     },
     {
       "@type": "Question",
-      "name": "Jaká je přesná lhůta na hlášení incidentu NÚKIB a jaký musí mít obsah?",
+      "name": "Co se stane, pokud nenahlásím incident s výpadkem sítě v čase?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Hlášení musí být zasláno do 24 hodin od zjištění incidentu, který způsobil nebo může způsobit přerušení dodávky elektřiny, plynu nebo tepla delší než 15 minut pro více než 50 tisíc zákazníků. Hlášení musí obsahovat: čas zjištění, popis incidentu, počet postižených zákazníků, dopad na ostatní sektory (pokud je znám), a původní příčinu (pokud je v tuto dobu identifikována). Následné hlášení o vyřešení incidentu se podává do 24 hodin po obnovení provozu."
+        "text": "Pokud výpadek nebo kybernetický útok postihne elektrizační soustavu a vy neinformujete NÚKIB do 24 hodin (včasné varování), hrozí vám pokuta až 10 milionů EUR nebo 2 % ročního obratu. Formální oznámení se musí odeslat do 72 hodin."
       }
     },
     {
       "@type": "Question",
-      "name": "Jaké jsou sankce za nedodržení NIS2 povinností a jaký je termín plné implementace?",
+      "name": "Musím oddělit SCADA síť fyzicky, nebo stačí virtuální segmentace?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sankce za porušení zákona č. 181/2014 Sb. dosahují až do výše několika milionů korun pro právnické osoby a lze uložit správní trest, další i trestní odpovědnost podle trestního zákona. Termín plné implementace všech povinností NIS2 je 18. října 2026. Od tohoto data musí být všechny podstatné subjekty v sektoru energetiky připraveny na inspekci NÚKIB v oblasti kybernetické bezpečnosti."
+        "text": "NIS2 požaduje efektivní segmentaci — ideálně fyzické oddělení (samostatné kabely, přepínače bez překrývajících se VLAN), ale s důkazem může být přijata vysoká-kvalitní virtuální segmentace s access-lists, jestliže je průběžně auditována a testována penetračními testy."
       }
     }
   ]
@@ -105,23 +105,23 @@
   <div class="breadcrumb">
     <a href="../index.html">Domovská stránka</a><span>›</span>
     <a href="index.html">Sektory</a><span>›</span>
-    NIS2 pro operátory kritické infrastruktury — energetika a zásobování v České republice
+    NIS2 pro energetiku, plyn a teplárenství v České republice – Nařízení 2026
   </div>
 </div>
 
 <!-- HERO -->
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
-    <span style="display:inline-block;background:#1a3a5c;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Příloha I — podstatný subjekt</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 pro operátory kritické infrastruktury — energetika a zásobování v České republice</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Tato stránka je určena provozovatelům elektrizačních soustav, distributorům plynu, operátorům sítí tepelné energie a dodavatelům paliv v ČR. Dozvíte se konkrétní povinnosti, které musíte splnit do roku 2026 dle zákona č. 181/2014 Sb. a směrnice NIS2.</p>
+    <span style="display:inline-block;background:#1a3a5c;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Příloha I — Subjekt kritické důležitosti</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 pro energetiku, plyn a teplárenství v České republice – Nařízení 2026</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Tato stránka vás provede konkrétními kybernetickými povinnostmi pro operátory energetické sítě, výrobce elektřiny, distributory plynu a poskytovatele tepelné energie. Naučíte se, jak splnit lhůty zákona č. 264/2025 Sb. a jak zabezpečit kritickou infrastrukturu.</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Subjekty, které klasifikuje NÚKIB jako provozovatele kritické infrastruktury v sektoru energetiky, plynu a tepelného hospodářství. Jedná se o společnosti provozující nadřazené elektrizační soustavy, distribuční soustavy elektrické energie a plynu, operátory dopravních sítí plynu a sítí dálkového vytápění s roční produkcí nebo distribucí nad stanoveným prahem. Zahrnuty jsou i poskytovatelé paliv s vlivem na energetickou bezpečnost.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Comply this regulation musí všechny organizace provozující elektrizační soustavy, operátoři distribuční sítě elektřiny nebo plynu, poskytovatelé služeb v sítích městského tepla a dodavatelé pohonných hmot. Není aplikován limit velikosti; povinnost se vztahuje na všechny operátory kritické infrastruktury v energetickém sektoru bez ohledu na počet zaměstnanců.</p>
   </div>
 </div>
 
@@ -135,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Bezpečnost OT/ICS/SCADA systémů a fyzické izolace</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Všechny řídicí systémy technologických procesů (SCADA, PLC, DCS) musí být odděleny od kancelářní IT sítě fyzickou segmentací. Nemůžete mít přímou přístupnost SCADA z počítačové sítě bez kontrolovaného přechodu přes demarkační bod. Implementujte monitoring anomálií v OT prostředí s alespoň týdenním auditováním logů přístupu k řídícím prvkům.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Inventarizace a segmentace SCADA/OT systémů</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Musíte zpracovat detailní inventář všech operačních technologií (OT), řídících systémů a SCADA zařízení připojených k elektrizační, plynárenské nebo teplárenské síti. Tyto systémy musí být fyzicky nebo logicky odděleny od standardní IT sítě prostřednictvím segmentace, aby se zabránilo přímému přístupu z kancelářských počítačů nebo internetu na kritické procesy.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -144,8 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Hlášení incidentů s dopadem na stabilitu sítě</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Bezodkladně (do 24 hodin) hlašte NÚKIB kybernetické incidenty, které vedou nebo mohou vést k přerušení dodávky elektrické energie, plynu nebo tepla přesahující 15 minut v oblasti více než 50 tisíc zákazníků. Pokud incident ovlivňuje více než jednu členskou zemi EU, jste povinni hlásit jej komunitě přes EGC (European Grid Coordination Platform).</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Bezpečnost vzdáleného přístupu k řídicím systémům</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Všechny vzdálené připojení k SCADA, HMI nebo IPCům musí používat šifrované protokoly (SSH, VPN s alespoň 128bitovým šifrováním), nikoli nešifrované staré normy jako Telnet nebo FTP. Přístup musí být časově omezený, logován a vyžadovat vícefaktorovou autentizaci; poskytovatel remote supportu nesmí mít přístup bez explicitního zmocnění v konkrétním čase.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -153,8 +153,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Bezpečnost dodavatelských řetězců hardware a firmware</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Dokumentujte zdroje všech komponent, které instalujete do SCADA a OT infrastruktury (transformátory, chytré měřiče, relé, moduly). Vyžadujte od výrobců a dodavatelů písemné záruky týkající se absence škodlivého kódu a zranitelností, a to zejména pro zařízení s přístupem k sítím. Proveďte audit kritických komponent minimálně jednou za dva roky.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Hlášení incidentů s potenciálem přeshraniční eskalace</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Pokud dojde k výpadku elektrizační soustavy, plynárenské sítě nebo teplárenské infrastruktury s dopadem na více než jednu zemi nebo na širší region, musíte informovat NÚKIB v časovém okně: včasné varování do 24 hodin, formální oznámení do 72 hodin, finální zpráva do 1 měsíce od zjištění incidentu.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -162,8 +162,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Fyzická bezpečnost rozvodných stanic se kybernetickým monitoringem</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Všechny transformační a rozvodné stanice, které ovládají průtok elektřiny nebo plynu, musí mít kombinovanou fyzickou ochranu (zámky, osvětlení, plotů) a 24/7 monitorování vstupu. Provozujte také senzory neobvyklé aktivity (teplota, vlhkost, vibraci) a detekci sabotáže. Fyzický přístup k zařízení musí být protokolován a vázán na silnou identifikaci osob.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Bezpečnost dodavatelských řetězců hardwaru a firmwaru</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Při nákupu zařízení pro síť (transformátory, spínače, jednotky RTU, energetické řadiče) je třeba ověřit bezpečnost dodavatele: certifikáty, penetrační testy dodávaného kódu, zásady aktualizací, a zajistit, aby dodavatel neposkytoval neautorizovaný remote přístup do vašich systémů prostřednictvím zadních dvířek.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -171,8 +171,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Řízení přístupu s vícefaktorovou autentizací pro vzdálené údržby</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Přístup poskytovatelů podpory (remote support, vendor access) k jakýmkoli OT systémům musí být vázán na schválení operátora v reálném čase, časově omezený (max. 4 hodiny bez opětovného schválení) a šifrován (min. TLS 1.2). Všechny vzdálené relace musí být zaznamenávány s tím, koho si nemigruje, kdy, jak dlouho a jaké příkazy provedl.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Fyzická bezpečnost rozvodny a monitoring se kybernetickými kontrolami</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Rozvodny, věž přepínačů a kritické uzly sítě musí mít fyzickou ochranu (uzamčené vchody, zálohy přístupu), ale musí být také sledovány kybernetickými senzory: CCTV s analýzou pohybu, senzory otevření dveří s loggingem, upozornění na neoprávněné fyzické zásahy, a všechny tyto údaje musí být korelovány s IT incidenty.</p>
       </div>
     </div>
   </div>
@@ -184,16 +184,16 @@
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>SCADA sítě jsou připojeny k plochým kancelářským sítím bez segmentace; zaměstnanci mohou přistupovat k řídícím terminálům z běžných počítačů, což umožňuje šíření malwaru z e-mailu do technologického prostředí.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>SCADA sítě jsou často provozovány na stejné fyzické infrastruktuře jako kancelářská IT bez segmentace, což umožňuje ransomwaru v e-mailu prostředník vyšplhat se přímo k řídicím prvkům.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Vzdálený přístup do SCADA souprav používá nešifrované či zastaralé protokoly (Telnet, FTP, HTTP) bez loggingu; audit zjistí jen výpisy logů bez informací o tom, kdo se připojuje a co dělá.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Vzdálený přístup techniků třetích stran není zaregistrován ani časově omezen; mají trvalé VPN nebo sdílená hesla, která nejsou auditována nebo měněna.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Žádný formální inventář OT zařízení; společnosti ví, že mají SCADA systémy, ale nemají přesné seznamy verzí firmware, výrobců či zranitelností relevantních pro jejich hardware.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Inventář OT zařízení chybí nebo je neúplný; administrátoři nemohou říci, kolik SCADA konzol, jednotek RTU nebo IED zařízení síť obsahuje, a proto nemohou detekovat neznámé nebo neoprávněné prvky.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Fornitori (výrobci OT prvků, softwarové firmy) mají permanentní přístup do soustav bez časových omezení a bez protokolování; tato přístupová práva nejsou nikdy auditována a nejsou nijak vázána na potřebu.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Updaty firmwaru na řídicích jednotkách jsou zanedbány kvůli obavám z výpadku; nejsou otestovány v izolovaném prostředí a nebezpečí bezpečnostní chyby se nesleduje.
     </li>
   </ul>
 </div>
@@ -209,7 +209,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">secfix.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../nastroje/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Zkontrolovat nástroj →</a>
+      <a href="../nastroje/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -217,7 +217,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">vanta.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../nastroje/vanta.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Zkontrolovat nástroj →</a>
+      <a href="../nastroje/vanta.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -225,7 +225,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">isms.online</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../nastroje/isms-online.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Zkontrolovat nástroj →</a>
+      <a href="../nastroje/isms-online.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
   </div>
 </div>
@@ -236,21 +236,21 @@
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Co přesně se rozumí pod pojmem 'fyzická segmentace' SCADA od kancelářní IT sítě?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Jaká je přesná lhůta pro registraci a splnění technických opatření?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Fyzická segmentace znamená, že kabely sítě OT jsou vedeny odděleně, jsou napojeny do oddělených switchů a jejich připojení k IT síti je možné pouze přes brány (DMZ appliances) s hlubinnou inspekcí paketů. Tato brána musí vyžadovat alespoň dvoustupňovou autentizaci a loggovat všechny pokusy o přístup. Sítě nesmí sdílet žádné aktivní síťové prvky (routery, switche) na vrstvě 2/3.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Lhůta registrace u NÚKIB nebo samoobslužné registrace je 31. prosince 2025. Po registraci máte přibližně 12 měsíců na implementaci technických bezpečnostních opatření. Pro kritickou energetiku je důležité hlášení zahájit hned v listopadu 2025, abyste měli čas na plánování.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Jaká je přesná lhůta na hlášení incidentu NÚKIB a jaký musí mít obsah?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Co se stane, pokud nenahlásím incident s výpadkem sítě v čase?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Hlášení musí být zasláno do 24 hodin od zjištění incidentu, který způsobil nebo může způsobit přerušení dodávky elektřiny, plynu nebo tepla delší než 15 minut pro více než 50 tisíc zákazníků. Hlášení musí obsahovat: čas zjištění, popis incidentu, počet postižených zákazníků, dopad na ostatní sektory (pokud je znám), a původní příčinu (pokud je v tuto dobu identifikována). Následné hlášení o vyřešení incidentu se podává do 24 hodin po obnovení provozu.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Pokud výpadek nebo kybernetický útok postihne elektrizační soustavu a vy neinformujete NÚKIB do 24 hodin (včasné varování), hrozí vám pokuta až 10 milionů EUR nebo 2 % ročního obratu. Formální oznámení se musí odeslat do 72 hodin.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Jaké jsou sankce za nedodržení NIS2 povinností a jaký je termín plné implementace?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Musím oddělit SCADA síť fyzicky, nebo stačí virtuální segmentace?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Sankce za porušení zákona č. 181/2014 Sb. dosahují až do výše několika milionů korun pro právnické osoby a lze uložit správní trest, další i trestní odpovědnost podle trestního zákona. Termín plné implementace všech povinností NIS2 je 18. října 2026. Od tohoto data musí být všechny podstatné subjekty v sektoru energetiky připraveny na inspekci NÚKIB v oblasti kybernetické bezpečnosti.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">NIS2 požaduje efektivní segmentaci — ideálně fyzické oddělení (samostatné kabely, přepínače bez překrývajících se VLAN), ale s důkazem může být přijata vysoká-kvalitní virtuální segmentace s access-lists, jestliže je průběžně auditována a testována penetračními testy.</p>
     </div>
   </div>
   </div>
@@ -269,8 +269,6 @@
   </div>
 </div>
 
-
-<nav class="related-sectors" aria-label="Související sektory" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Související sektory</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="fintech.html">NIS2 pro fintech, platební processory a neobanky v ČR</a></li><li style="margin:0"><a href="food.html">NIS2 pro potravinářské podniky a velké obchodní řetězce ČR 2026</a></li><li style="margin:0"><a href="hospitals.html">NIS2 pro nemocnice v ČR</a></li><li style="margin:0"><a href="hr-payroll.html">NIS2 pro poskytovatele HR a mzdových služeb v ČR</a></li><li style="margin:0"><a href="index.html">Sektory spadající pod NIS2 v ČR 2026</a></li><li style="margin:0"><a href="insurance.html">NIS2 pro pojišťovny ČR 2026</a></li></ul></nav>
 <footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
   <div class="container">
     <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
@@ -283,6 +281,5 @@
   </div>
 </footer>
 
-  <script src="/js/tg-cta.js" defer></script>
 </body>
 </html>

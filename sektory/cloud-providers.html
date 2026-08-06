@@ -11,18 +11,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NIS2 pro poskytovatele cloudových služeb v ČR — Povinnosti 2026</title>
-  <meta name="description" content="Kompletní průvodce povinnostmi NIS2 pro IaaS, PaaS a SaaS poskytovatele v Česku. Notification 24h, SOC 2, incident management — deadline 2026.">
+  <title>NIS2 pro poskytovatele cloudových služeb v ČR – Povinnosti 2026</title>
+  <meta name="description" content="Průvodce NIS2 compliance pro IaaS, PaaS, SaaS v České republice. Povinnosti dle zákona 264/2025 Sb., deadline 31.12.2025, pokuty až 10 mil. €.">
   <link rel="canonical" href="https://nis2-nastroje.cz/sektory/cloud-providers.html">
-  <meta property="og:title" content="NIS2 pro poskytovatele cloudových služeb v ČR — Povinnosti 2026">
-  <meta property="og:description" content="Kompletní průvodce povinnostmi NIS2 pro IaaS, PaaS a SaaS poskytovatele v Česku. Notification 24h, SOC 2, incident management — deadline 2026.">
+  <meta property="og:title" content="NIS2 pro poskytovatele cloudových služeb v ČR – Povinnosti 2026">
+  <meta property="og:description" content="Průvodce NIS2 compliance pro IaaS, PaaS, SaaS v České republice. Povinnosti dle zákona 264/2025 Sb., deadline 31.12.2025, pokuty až 10 mil. €.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-nastroje.cz/sektory/cloud-providers.html">
   <meta property="og:locale" content="cs_CZ">
   <meta property="og:site_name" content="NIS2-Nastroje.cz">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="NIS2 pro poskytovatele cloudových služeb v ČR — Povinnosti 2026">
-  <meta name="twitter:description" content="Kompletní průvodce povinnostmi NIS2 pro IaaS, PaaS a SaaS poskytovatele v Česku. Notification 24h, SOC 2, incident management — deadline 2026.">
+  <meta name="twitter:title" content="NIS2 pro poskytovatele cloudových služeb v ČR – Povinnosti 2026">
+  <meta name="twitter:description" content="Průvodce NIS2 compliance pro IaaS, PaaS, SaaS v České republice. Povinnosti dle zákona 264/2025 Sb., deadline 31.12.2025, pokuty až 10 mil. €.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -46,7 +46,7 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "NIS2 pro poskytovatele cloudových služeb v České republice — Povinnosti pro podstatné entity",
+      "name": "NIS2 pro poskytovatele cloudových služeb v České republice – Compliance 2026",
       "item": "https://nis2-nastroje.cz/sektory/cloud-providers.html"
     }
   ]
@@ -59,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Jsme SaaS provider s 500 zákazníky v EU. Padáme pod NIS2 povinnosti?",
+      "name": "Musím sám implementovat všechna bezpečnostní opatření nebo mohu spoléhat na svého subdodavatele (datové centrum, cloud provider)?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ano, pokud obsluhujete zákazníky v EU a máte nějakou kritickou roli (např. sloužíte financím, zdravotnictví, energii) nebo překročíte prahové hodnoty (250+ zaměstnanců, 50M+ EUR obratu), jste podstatnou entitou dle Přílohy I. NÚKIB vás kontaktuje s konkrétní klasifikací. Připravte si proto ihned incident response tým a dokumentaci SRM."
+        "text": "Jste odpovědní za implementaci a ověření bezpečnostních opatření, i když je zajišťuje subdodavatel. Model sdílené odpovědnosti není vylučující – vy zůstáváte v kontaktu s NÚKIB a jste odpovědní za to, aby vaši subdodavatelé splňovali NIS2 standardy. Musíte vyžadovat bezpečnostní audit a SLA od svých subdodavatelů, zejména operátorů datových center a výrobců hardwaru."
       }
     },
     {
       "@type": "Question",
-      "name": "Má notification deadline 24 hodin znamenat, že musíme oznamovat VŠECHNY bezpečnostní incidenty?",
+      "name": "Jaká je lhůta pro implementaci bezpečnostních opatření po registraci do 31. prosince 2025?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ne. Notifikace do 24 hodin se vztahuje pouze na incidenty klasifikované jako NIS2-relevantní — tedy ty, které mají vliv na dostupnost, integritu nebo důvěrnost vaší služby. Běžné bezpečnostní obavy bez vlivu na službu se nepodléhají tomuto SLA. Doporučujeme zavést jasný klasifikační процес s NÚKIB, aby nebyla pochybnost."
+        "text": "Dle zákona č. 264/2025 Sb. musíte implementovat technická a organizační opatření v časovém horizontu přibližně 12 měsíců od registrace. To znamená, že pokud se zaregistrujete 31. prosince 2025, měli byste mít opatření funkční do konce roku 2026. NÚKIB může požadovat urychlené časové plány v případě kritické infrastruktury nebo vysokého rizika."
       }
     },
     {
       "@type": "Question",
-      "name": "Jaké jsou pokutě za nesplnění NIS2 povinností v Česku?",
+      "name": "Jaké jsou pokuty za nedodržení NIS2 pro poskytovatele cloudových služeb?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "NÚKIB může uložit pokutu až do 10 milionů Kč za závažné porušení bezpečnostních povinností (např. nedostatečná notifikace incidentů, chybí audit trails). Penalizace se zvyšují, pokud jde o opakované porušení. Nejlepší ochrana je proaktivní compliance — zaměřit se na incident response plánování a průběžný monitoring do května 2026, kdy se NIS2 plně uplatňuje."
+        "text": "Poskytovatelé zařazení do Přílohy I jako podstatné subjekty čelí pokutám až 10 milionů EUR nebo 2 % ročního obratu (podle toho, která částka je vyšší) za porušení hlavních povinností, včetně neregistrace, nesplnění notifikačních lhůt nebo nedostatečné bezpečnosti. Porušení vedení evidence incidentů nebo nedostatečného dohledu nad subdodavateli může být postihnuto pokutou až 7 milionů EUR nebo 1,4 % obratu."
       }
     }
   ]
@@ -105,23 +105,23 @@
   <div class="breadcrumb">
     <a href="../index.html">Domovská stránka</a><span>›</span>
     <a href="index.html">Sektory</a><span>›</span>
-    NIS2 pro poskytovatele cloudových služeb v České republice — Povinnosti pro podstatné entity
+    NIS2 pro poskytovatele cloudových služeb v České republice – Compliance 2026
   </div>
 </div>
 
 <!-- HERO -->
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
-    <span style="display:inline-block;background:#1a3a5c;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Příloha I — podstatná entita</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 pro poskytovatele cloudových služeb v České republice — Povinnosti pro podstatné entity</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Tato stránka je určena pro vedení IT a compliance specialisty na poskytovatelích cloudových služeb s významným počtem zákazníků v EU. Dozvíte se konkrétní požadavky NIS2 na bezpečnost infrastruktury, incident response a dokumentaci dělené odpovědnosti.</p>
+    <span style="display:inline-block;background:#1a3a5c;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Příloha I – Podstatný subjekt</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 pro poskytovatele cloudových služeb v České republice – Compliance 2026</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Tato stránka je určena podnikům poskytujícím cloudové služby (IaaS, PaaS, SaaS) se signifikantním podílem zákazníků v EU, které zákon č. 264/2025 Sb. o kybernetické bezpečnosti (ZoKB) klasifikuje jako subjekty Přílohy I. Naučíte se konkrétní povinnosti, lhůty pro implementaci a jak se vyhnout pokutám až 10 milionů EUR.</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Pod NIS2 spadají poskytovatelé IaaS, PaaS a SaaS služeb, kteří obsluhují významný počet zákazníků v EU nebo jsou kritičtí pro infrastrukturu členských států. Konkrétně jde o společnosti s více než 250 zaměstnanci nebo obratem přesahujícím 50 milionů EUR, jejichž cloudy jsou přístupné z EU.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Mezi subjekty podléhající NIS2 v sektoru cloudových služeb patří všichni poskytovatelé IaaS, PaaS a SaaS, kteří: (1) poskytují služby podstatného počtu podnikatelských subjektů nebo veřejné správy v EU, (2) disponují infrastrukturou v EU nebo mají přímý vliv na bezpečnost EU. Zahrnuje jednak globální poskytovatele (Amazon Web Services, Microsoft Azure, Google Cloud), tak regionální hráče; malé poskytovatele, kteří nejsou na seznamu NÚKIB, se mohou kvalifikovat jako důležité subjekty v závislosti na rozsahu služeb.</p>
   </div>
 </div>
 
@@ -135,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Zajištění bezpečnostního baseline pro multi-tenant infrastrukturu</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Musíte implementovat izolaci tenant-to-tenant na úrovni sítě, úložiště a výpočetních prostředků. Požadavek NIS2 vyžaduje, aby bylo fyzicky nebo logicky nemožné pro jednoho zákazníka přistupovat k datům jiného. Dokumentujte architektonické opatření v matici RACI a proveďte ročně nezávislý penetration test infrastruktury.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Registrace a sebeevaluace do 31. prosince 2025</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Každý poskytovatel cloudových služeb zařazený do Přílohy I musí do 31. prosince 2025 provést registraci u NÚKIB a podrobit se sebeevaluaci podle kritérií NIS2. Sebeevaluace musí obsahovat inventár poskytovaných služeb, seznam zákazníků v EU, technickou architekturu a existující opatření bezpečnosti. Tato sebeevaluace tvoří základ pro následný dohled NÚKIB a pro plán implementace zbývajících opatření.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -144,8 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Notifikace incidentů v CZ a EU do 24 hodin</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Při detekci bezpečnostního incidentu, který by mohl ovlivnit vaše zákazníky nebo jejich data, musíte notifikovat NÚKIB a postižené zákazníky do 24 hodin. Incident musí být klasifikován jako NIS2-relevantní, pokud se týká dostupnosti, integrity nebo důvěrnosti služby. Zavedení automatizovaného incident tiering systému zajistí správné zařazení.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Implementace bezpečnostní základny pro víceklientskou infrastrukturu</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Do přibližně 12 měsíců od registrace musí poskytovatele implementovat opatření zajišťující izolaci dat a bezpečnost mezi jednotlivými klienty v sdílené infrastruktuře. Požadavky zahrnují multi-tenant encryption, bezpečné key management, segregaci síťových prostředků a řízení přístupu na základě rolí (RBAC). Minimální standard je SOC 2 Type II nebo ISO/IEC 27001, doplnený o NIS2-specifické prvky jako hardening, vulnerability management a kontrola konfigurace.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -153,8 +153,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Dokumentace modelu sdílené odpovědnosti (Shared Responsibility Model)</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Přesně musíte specifikovat, jaké bezpečnostní povinnosti nese váš podnik a jaké jsou v rukou zákazníka. Při prodeji Enterprise tarifu musíte poskytnout v souladu s NIS2 detailní SRM dokument na českém a anglickém jazyku s jasnou naplánovanou security baseline.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Notifikace bezpečnostních incidentů do 24 a 72 hodin</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Poskytovatel musí zavést systém včasného varování (early warning) a zajistit, aby byl incident, který ovlivňuje bezpečnost služby poskytované zákazníkům v EU, nahlášen NÚKIB nejpozději do 24 hodin od detekce. Zákazníci musí být notifikováni do 24 hodin, formální hlášení NÚKIB pak do 72 hodin. Finální zpráva se předkládá do jednoho měsíce. Pro cloudové služby to znamená třídění incidentů dle dopadů a vytvoření vyčleněného týmu pro NIS2-relevantní incidenty.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -162,8 +162,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">SOC 2 Type II a ISO 27001 certifikace jako minimum</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Podpora ISO 27001 nebo ekvivalentní mezinárodní norma je povinná k prokázání řídícího rámce. Doporučuje se získat SOC 2 Type II certifikaci s auditem minimálně za posledních 6 měsíců, která je de facto očekávána zákazníky v EU. Údaje o certifikacích zveřejněte na bezpečnostní stránce vašeho webu.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Dokumentace modelu sdílené odpovědnosti a notifikace zákazníků</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Poskytovatele musí jasně a srozumitelně zdokumentovat model sdílené odpovědnosti pro každou službu (co zodpovídá za bezpečnost poskytovatel, co za bezpečnost zákazník). Všechny smlouvy se zákazníky v EU musí obsahovat smluvní povinnost, aby byli zákazníci schopni plnit své vlastní povinnosti dle NIS2. Zákazník musí být informován nejpozději do 24 hodin od detekce incidentu ovlivňujícího jeho data; tato lhůta se nesmí odkládat na běžný incident management.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -171,8 +171,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Kontrola lokalizace a rezidence dat pro EU zákazníky</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Zajistěte technické a smluvní prostředky, aby se data EU zákazníků nemohla replikovat mimo EU bez jejich souhlasu. Metadata, backupy a logování musí zůstat v EU podle §7 zákona 181/2014 Sb. Implementujte geografické omezení v hypervisor konfiguraci a v nastaveních disaster recovery.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Řízení dodavatelské řetězce a bezpečnost hardwaru</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Poskytovatel musí zavést program řízení bezpečnosti svých subdodavatelů (zejména operátorů datových center, výrobců hardwaru a poskytovatelů telekomunikačních služeb). Musí ověřovat, že hardwarové komponenty nejsou kompromitovány; to zahrnuje autentičnost, fyzickou bezpečnost v Supply Chain a kontrolu firmware. Dokumentace by měla obsahovat seznam kritických subdodavatelů, jejich lokace a audity jejich bezpečnostních praktik nejméně jedenkrát ročně.</p>
       </div>
     </div>
   </div>
@@ -184,16 +184,16 @@
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Nedostatek formální NIS2-specifické klasifikace incidentů odlišné od obecné bezpečnostní incident taxonomie — mnoho poskytovatelů ignoruje, že 24h notifikace se vztahuje pouze na NIS2-relevantní incidenty, nikoliv všechny bezpečnostní problémy.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Absence formálního systému pro třídění incidentů podle NIS2 – mnohé organizace nemají oddělený incident reporting process pro NIS2-relevantní incidenty a mají tendenci využívat běžné ITSM procesů, které nejsou sladěny s 24h/72h lhůtami.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>SLA pro notifikaci zákazníků není zarovnáno s požadavky NIS2 (24h NÚKIB, 72h zákazníci) — komunikační kanály a eskalační procedury chybí nebo jsou vágní v kontraktech.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>SLA pro notifikaci zákazníků nejsou sladěni s NIS2 požadavky – běžné smlouvy obsahují notifikaci 'rozumné době' nebo 'do 30 dnů', ale NIS2 vyžaduje 24 hodin; služby IaaS/PaaS jsou často povoleny notifikovat až po uzavření vyšetřování.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Nedostatečné screeningování a monitoring subdodavatelů a datacenter operátorů — NIS2 vás činí odpovědnými za bezpečnost řetězce dodávky (HW, colocation, compliance audity), což mnoho poskytovatelů přehlíží.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Nedostatečná kontrola Supply Chain bezpečnosti hardwaru – poskytovatelé cloudových služeb často nemají viditelnost do security posture svých subdodavatelů (výrobci serverů, operátoři datových center, poskytovatele network connectivity) a nemohou prokázat vhodnost jejich bezpečnostních opatření.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Absence aktuálního dokumentu sdílené odpovědnosti na místní jazyk — zákazníci nedostávají jasnost ohledně, kdo je vlastně zodpovědný za co, čímž se zvyšuje právní riziko pro poskytovatele.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Chybějící nebo neúplná dokumentace modelu sdílené odpovědnosti v smluvním rámci – smlouvy se zákazníky obsahují technické informace, ale explicitně nenavazují na NIS2 povinnosti a nechávají nejasnosti, kdo je odpovědný za detekci incidentů a reportování.
     </li>
   </ul>
 </div>
@@ -209,7 +209,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">vanta.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../nastroje/vanta.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Zkontrolovat nástroj →</a>
+      <a href="../nastroje/vanta.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -217,7 +217,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">drata.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../nastroje/drata.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Zkontrolovat nástroj →</a>
+      <a href="../nastroje/drata.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -225,7 +225,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">sprinto.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../nastroje/sprinto.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Zkontrolovat nástroj →</a>
+      <a href="../nastroje/sprinto.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
   </div>
 </div>
@@ -236,21 +236,21 @@
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Jsme SaaS provider s 500 zákazníky v EU. Padáme pod NIS2 povinnosti?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Musím sám implementovat všechna bezpečnostní opatření nebo mohu spoléhat na svého subdodavatele (datové centrum, cloud provider)?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Ano, pokud obsluhujete zákazníky v EU a máte nějakou kritickou roli (např. sloužíte financím, zdravotnictví, energii) nebo překročíte prahové hodnoty (250+ zaměstnanců, 50M+ EUR obratu), jste podstatnou entitou dle Přílohy I. NÚKIB vás kontaktuje s konkrétní klasifikací. Připravte si proto ihned incident response tým a dokumentaci SRM.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Jste odpovědní za implementaci a ověření bezpečnostních opatření, i když je zajišťuje subdodavatel. Model sdílené odpovědnosti není vylučující – vy zůstáváte v kontaktu s NÚKIB a jste odpovědní za to, aby vaši subdodavatelé splňovali NIS2 standardy. Musíte vyžadovat bezpečnostní audit a SLA od svých subdodavatelů, zejména operátorů datových center a výrobců hardwaru.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Má notification deadline 24 hodin znamenat, že musíme oznamovat VŠECHNY bezpečnostní incidenty?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Jaká je lhůta pro implementaci bezpečnostních opatření po registraci do 31. prosince 2025?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Ne. Notifikace do 24 hodin se vztahuje pouze na incidenty klasifikované jako NIS2-relevantní — tedy ty, které mají vliv na dostupnost, integritu nebo důvěrnost vaší služby. Běžné bezpečnostní obavy bez vlivu na službu se nepodléhají tomuto SLA. Doporučujeme zavést jasný klasifikační процес s NÚKIB, aby nebyla pochybnost.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Dle zákona č. 264/2025 Sb. musíte implementovat technická a organizační opatření v časovém horizontu přibližně 12 měsíců od registrace. To znamená, že pokud se zaregistrujete 31. prosince 2025, měli byste mít opatření funkční do konce roku 2026. NÚKIB může požadovat urychlené časové plány v případě kritické infrastruktury nebo vysokého rizika.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Jaké jsou pokutě za nesplnění NIS2 povinností v Česku?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Jaké jsou pokuty za nedodržení NIS2 pro poskytovatele cloudových služeb?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">NÚKIB může uložit pokutu až do 10 milionů Kč za závažné porušení bezpečnostních povinností (např. nedostatečná notifikace incidentů, chybí audit trails). Penalizace se zvyšují, pokud jde o opakované porušení. Nejlepší ochrana je proaktivní compliance — zaměřit se na incident response plánování a průběžný monitoring do května 2026, kdy se NIS2 plně uplatňuje.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Poskytovatelé zařazení do Přílohy I jako podstatné subjekty čelí pokutám až 10 milionů EUR nebo 2 % ročního obratu (podle toho, která částka je vyšší) za porušení hlavních povinností, včetně neregistrace, nesplnění notifikačních lhůt nebo nedostatečné bezpečnosti. Porušení vedení evidence incidentů nebo nedostatečného dohledu nad subdodavateli může být postihnuto pokutou až 7 milionů EUR nebo 1,4 % obratu.</p>
     </div>
   </div>
   </div>
@@ -269,8 +269,6 @@
   </div>
 </div>
 
-
-<nav class="related-sectors" aria-label="Související sektory" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Související sektory</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="construction.html">NIS2 pro stavební firmy ČR 2026</a></li><li style="margin:0"><a href="cybersecurity-firms.html">NIS2 pro poskytovatele kybernetické bezpečnosti v ČR 2026</a></li><li style="margin:0"><a href="dental-clinics.html">NIS2 pro zubní ordinace a zdravotnické kliniky</a></li><li style="margin:0"><a href="education.html">NIS2 compliance vysokých škol ČR</a></li><li style="margin:0"><a href="energy.html">NIS2 pro energetické operátory v ČR</a></li><li style="margin:0"><a href="fintech.html">NIS2 pro fintech, platební processory a neobanky v ČR</a></li></ul></nav>
 <footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
   <div class="container">
     <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
@@ -283,6 +281,5 @@
   </div>
 </footer>
 
-  <script src="/js/tg-cta.js" defer></script>
 </body>
 </html>
