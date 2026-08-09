@@ -10,7 +10,7 @@ const AFFILIATE_MAP = [
   { match: "vanta.com",  affiliate: "" },  // Same program as PL
   { match: "complycloud.eu",  affiliate: "" },  // Same program as PL
   { match: "drata.com",  affiliate: "" },  // Same program as PL
-  { match: "nordlayer.com",  affiliate: "" },  // Same program as PL
+  { match: "nordlayer.com",  affiliate: "https://go.nordlayer.net/aff_c?offer_id=969&aff_id=150757" },  // Same program as PL
   { match: "1password.com",  affiliate: "" },  // Same program as PL
   { match: "bitwarden.com",  affiliate: "" },  // Same program as PL
   { match: "bitdefender.com",  affiliate: "" },  // Same program as PL
