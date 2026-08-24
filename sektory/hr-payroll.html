@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-<meta name="robots" content="noindex,nofollow">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-4D0Y8YWNF3"></script>
   <script>
@@ -12,18 +11,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NIS2 pro poskytovatele HR a mzdových služeb v ČR — požadavky 2026</title>
-  <meta name="description" content="Průvodce NIS2 povinnostmi pro dodavatele HR a mzdových systémů v Česku. Ochrana dat zaměstnanců, izolace klientů, reporting incidentů — lhůta do 2026.">
+  <title>NIS2 pro poskytovatele HR a mezd. software v ČR – Annex II 2026</title>
+  <meta name="description" content="NIS2 zákon 264/2025 Sb. pro HR software a mzdové služby: registrace do 31.12.2025, technické opatření, incident reporting, pokuty až €7M.">
   <link rel="canonical" href="https://nis2-nastroje.cz/sektory/hr-payroll.html">
-  <meta property="og:title" content="NIS2 pro poskytovatele HR a mzdových služeb v ČR — požadavky 2026">
-  <meta property="og:description" content="Průvodce NIS2 povinnostmi pro dodavatele HR a mzdových systémů v Česku. Ochrana dat zaměstnanců, izolace klientů, reporting incidentů — lhůta do 2026.">
+  <meta property="og:title" content="NIS2 pro poskytovatele HR a mezd. software v ČR – Annex II 2026">
+  <meta property="og:description" content="NIS2 zákon 264/2025 Sb. pro HR software a mzdové služby: registrace do 31.12.2025, technické opatření, incident reporting, pokuty až €7M.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-nastroje.cz/sektory/hr-payroll.html">
   <meta property="og:locale" content="cs_CZ">
   <meta property="og:site_name" content="NIS2-Nastroje.cz">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="NIS2 pro poskytovatele HR a mzdových služeb v ČR — požadavky 2026">
-  <meta name="twitter:description" content="Průvodce NIS2 povinnostmi pro dodavatele HR a mzdových systémů v Česku. Ochrana dat zaměstnanců, izolace klientů, reporting incidentů — lhůta do 2026.">
+  <meta name="twitter:title" content="NIS2 pro poskytovatele HR a mezd. software v ČR – Annex II 2026">
+  <meta name="twitter:description" content="NIS2 zákon 264/2025 Sb. pro HR software a mzdové služby: registrace do 31.12.2025, technické opatření, incident reporting, pokuty až €7M.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -47,7 +46,7 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "NIS2 pro poskytovatele HR a mzdových služeb v České republice — povinnosti pro důležité subjekty",
+      "name": "NIS2 pro poskytovatele HR softwaru a mzdových služeb v České republice — požadavky 2026",
       "item": "https://nis2-nastroje.cz/sektory/hr-payroll.html"
     }
   ]
@@ -60,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Jak ověřit, že moje multi-tenantová SaaS platforma má správnou izolaci dat?",
+      "name": "Musí si HR software registrovat povinně jako NIS2 důležitá jednotka?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Proveďte penetrační test zaměřený na tenant hopping — pokuste se z účtu tenanta A přistupovat k datům tenanta B skrze API, SQL, nebo aplikační rozhraní. Výsledky testu by měly být záporné. Dále si nechte posoudit architekturu databází nezávislým audítorem a zajistěte, aby každý tenant používal samostatný řádkový filtr (row-level security) nebo oddělené databáze."
+        "text": "Pokud poskytujete HR nebo mzdový software více klientům a nefunkčnost by měla závažný dopad na hospodářství nebo společnost, ano. Zákon č. 264/2025 Sb. vás automaticky zařadí do Přílohy II. Máte do 31. prosince 2025 na samohodnocení a oznámení NÚKIB. Ověřit si svou povinnost můžete konzultací s NÚKIB nebo právním poradcem."
       }
     },
     {
       "@type": "Question",
-      "name": "Co se stane, pokud nenahlásím incident NÚKIB v čase?",
+      "name": "Co se stane, když vás napadnou hackeři a kradou mzdové data najednou stovkám firem?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Dle zákona č. 264/2025 Sb. § 37 hrozí pokuta až 5 milionů Kč za porušení povinnosti hlášení incidentů. Jako poskytovatel digitálních služeb se navíc expozujete právní odpovědnosti vůči klientům, kteří mohou požadovat kompenzaci za újmu vzniklou zpožděním hlášení a jejich neschopností informovat své zaměstnance či regulátory včas."
+        "text": "Musíte poslat NÚKIB předčasné varování do 24 hodin a detailní oznámení do 72 hodin. Vzhledem k rozsahu (mnoho klientů najednou) se jedná o kritický incident. Zároveň musíte kontaktovat všechny postižené klienty a jejich údaje hlásit úřadu na ochranu osobních údajů. Porušení lhůt hlášení vede k pokutě až 7 milionů EUR. Pokud incident vznikl kvůli nedostatečné izolaci tenantů na vaší straně, můžete být zodpovědní také za škodu vůči všem klientům."
       }
     },
     {
       "@type": "Question",
-      "name": "Jak zajistit, aby administrátoři používali hardwarový MFA bez rušení workflow?",
+      "name": "Jaká je přesná pokuta za nedodržení NIS2 povinností?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Implementujte FIDO2 nebo smartcard klíče jako povinné pro přístup do administračního panelu, ale umožněte administrátorům přihlášení se z kanceláře přes dedikovanou stanici s čtečkou klíčů. Pro výjezdy poskytněte bezpečný vzdálený přístup přes VPN a hardware klíč. Školte administrátory, aby si klíče nosili, a mají záložní klíč uložený v trezoru. Nepoužívejte SMS nebo softwarové tokeny jako náhradu."
+        "text": "Pro důležité jednotky (Příloha II) je maximální pokuta až 7 milionů EUR nebo 1,4 % celkového ročního obratu, pokud je tato hodnota vyšší. Pokuty ukládá NÚKIB. Při dlouhodobém porušení povinností (např. chybějící registrace, nefunkční incident reporting nebo nedostatečné bezpečnostní opatření) může NÚKIB ukládat pokuty i opakovaně."
       }
     }
   ]
@@ -106,23 +105,23 @@
   <div class="breadcrumb">
     <a href="../index.html">Domovská stránka</a><span>›</span>
     <a href="index.html">Sektory</a><span>›</span>
-    NIS2 pro poskytovatele HR a mzdových služeb v České republice — povinnosti pro důležité subjekty
+    NIS2 pro poskytovatele HR softwaru a mzdových služeb v České republice — požadavky 2026
   </div>
 </div>
 
 <!-- HERO -->
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
-    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Příloha II — důležitý subjekt</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 pro poskytovatele HR a mzdových služeb v České republice — povinnosti pro důležité subjekty</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Tato stránka je určena vedoucím bezpečnosti a compliance vedoucím u poskytovatelů HR a mzdových služeb v ČR, které zákon č. 264/2025 Sb. klasifikuje jako důležité subjekty. Naučíte se konkrétní povinnosti pro ochranu údajů zaměstnanců více klientů a způsob splnění termínu do roku 2026.</p>
+    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Příloha II — důležitá jednotka</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 pro poskytovatele HR softwaru a mzdových služeb v České republice — požadavky 2026</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Tato příručka se zaměřuje na prodejce HR a mzdového softwaru, kteří spravují firemní a osobní údaje zaměstnanců pro více organizací. Pochopíte, které konkrétní bezpečnostní opatření musíte zavést podle zákona č. 264/2025 Sb. a jak se vyhnout pokutám až 7 milionů EUR.</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Jako důležitý subjekt se NIS2 povinnosti vztahují na poskytovatele HR a mzdových služeb v ČR, kteří zpracovávají osobní údaje zaměstnanců pro 10 a více právnických osob, nebo jejichž služby jsou kritické pro informační společnost více organizací. Patří sem poskytovatelé SaaS platforem pro mzdy, účast zaměstnanců, správu lidských zdrojů a personální agendy.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Poskytovatele digitálních služeb spadají pod NIS2, pokud poskytují software nebo služby pro správu mezd, personalistiku nebo údaje zaměstnanců více klientům a jejich nefunkčnost by měla závažný dopad na hospodářství nebo společnost. Zákon se týká jak domácích, tak zahraničních poskytovatelů obsluhy tuzemských podniků a institucí. Malí poskytovatelé s minimálním počtem klientů či omezeným dopadem mohou spadat do nižší kategorie, ale typicky se zde jedná o střední až velké SaaS operátoři.</p>
   </div>
 </div>
 
@@ -136,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Izolace dat klientů v multi-tenantových systémech</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">V podmínkách multi-tenantové SaaS platformy musíte zabezpečit přísnou logickou a fyzickou separaci dat každého klienta tak, aby zaměstnanecké údaje jedné organizace nemohly být přístupné dat jiné organizace. Implementujte granulární řízení přístupu na úrovni datových tabulek a databází, proveďte pravidelné penetrační testy zaměřené na tenant hopping a dokumentujte architekturu izolace v bezpečnostní dokumentaci.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Registrace a samohodnocení bezpečnosti do 31. prosince 2025</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Všichni poskytovatelé HR a mzdového softwaru spadající pod Přílohu II musí do 31. prosince 2025 oznámit NÚKIB své zařazení nebo podat samohodnocení. Registrací potvrzujete, že jste důležitou jednotkou a zavadíte technická opatření v souladu se zákonem č. 264/2025 Sb. Tato opatření musíte mít zcela funkční nejpozději do 12 měsíců od registrace. Opozdan registrace může vést k pokutě až 7 milionů EUR nebo 1,4 % ročního obratu.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -145,8 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Vícefaktorová autentizace pro správce systému s hardwarovým klíčem</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Všichni správcové mzdových systémů a datových tabulek zaměstnanců musí používat hardware MFA (FIDO2 klíč nebo smartcard), ne pouze SMS či softwarový token. Zakažte vzdálený přístup k administračním rozhraním bez fyzické přítomnosti klíče a implementujte logování všech přístupu spolu s výstrahou v reálném čase.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Hlášení bezpečnostních incidentů s termínem 24–72 hodin</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Pokud dojde k porušení bezpečnosti nebo kybernetického útoku na váš HR či mzdový systém, musíte NÚKIB poslat předčasné varování do 24 hodin a formální oznámení do 72 hodin. Finální zprávu odevzdáte nejpozději jeden měsíc po incidentu. Vzhledem k tomu, že spravujete údaje pro více klientů, je incident u vás považován za mnohem závažnější a vyžaduje okamžité jednání. Ignorování lhůt pro hlášení vede k dodatečným pokutám.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -154,8 +153,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Formální proces smazání dat a vypršení přístupu po skončení smlouvy</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Vytvořte dokumentovaný postup, který garantuje úplné smazání nebo anonymizaci všech osobních údajů klienta do 30 dnů od skončení smlouvy. Postup musí zahrnovat kontrolu všech záloh, archivů, testovacích prostředí a log souborů. Zajistěte, aby všichni zaměstnanci klienta měli zablokovaný přístup okamžitě a aby byla verifikace smazání provedena nezávislou stranou.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Izolace dat klientů a kontrola přístupu správců</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Váš systém musí zajišťovat úplnou separaci údajů mezi jednotlivými klienty (tenant isolation), aby zaměstnanec jedné firmy nemohl vidět data druhé. Všechny přístupy správců k mzdovým a personálním datům musí být chráněny hardwarovou MFA (klíče, čipové karty) a podrobně protokolovány. Nesmíte umožňovat vzdálený přístup bez dodatečné autentizace a musíte mít formální postup pro okamžitou revokaci přístupu po výpovědi nebo změně role.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -163,8 +162,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Hlášení incidentů NÚKIB jako poskytovatel digitálních služeb</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Máte-li podezření na porušení bezpečnosti, které ovlivňuje více klientů nebo jejich zaměstnance, musíte hlásit incident NÚKIB bez zbytečného odkladu, nejpozději 72 hodin od zjištění. Hlášení musí obsahovat seznam postižených klientů, počet zaměstnanců a povahu úniku (mzdy, osobní údaje, bankovní účty). Paralelně musíte informovat postižené klienty, aby mohli sami hlásit incidenty svým regulátorům dle GDPR.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Bezpečnost a odstranění dat při ukončení smlouvy s klientem</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Smlouvy se všemi klienty musí obsahovat jasně definovanou povinnost bezpečného odstranění nebo vrácení všech jejich dat včetně záloh po skončení poskytování služby. Musíte mít dokumentovaný proces, který zaručuje, že žádná kopie dat nezbude na vašich serverech, zálohách nebo u třetích stran. Incident reporting musíte rozšířit i na situace, kdy dojde k úniku dat v důsledku nedostatečného smazání. Všechny údaje o zaměstnancích jsou osobními údaji a reguluje je také GDPR.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -172,8 +171,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Bezpečnost dodavatelského řetězce a dodavatelské dohody</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Vypracujte seznam všech subdodavatelů, kteří zpracovávají údaje zaměstnanců (cloudové poskytovatele infrastruktury, zálohovací služby, emailové servery) a zajistěte, aby jejich smlouvy obsahovaly NIS2 bezpečnostní požadavky. Proveďte minimálně roční audit bezpečnosti těchto subdodavatelů a vyžadujte compliance report nebo certifikaci (ISO 27001, SOC 2).</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Bezpečnost dodavatelské sítě a třetích stran</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Pokud používáte podpůrné služby od cloudových providerů, databázových správců nebo bezpečnostních auditorů, musíte s nimi uzavřít smlouvy s jasně definovanými bezpečnostními požadavky a právy kontroly. Vaši klíčoví subdodavatelé (např. cloud provider) musí splňovat stejné nebo srovnatelné bezpečnostní standardy. Musíte pravidelně ověřovat, že vaši partnři udržují bezpečnost a nejste sami zodpovědní za incident v jejich systému, pokud máte řádný dohled.</p>
       </div>
     </div>
   </div>
@@ -185,16 +184,16 @@
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Nedostatečná izolace dat v multi-tenantových systémech — databáze sdílí stejné sloupce bez řádkové bezpečnosti nebo filtry přístupu nejsou správně implementovány, což vytváří riziko úniku dat mezi klienty.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Nedostatečná izolace tenantů v multi-klientských SaaS platformách — data jednoho zaměstnance mohou být přístupná přes chybu v databázi pro jiného klienta, což porušuje základní požadavek NIS2.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Přístup správců chráněn pouze heslem nebo softwarovým tokenem — chybí hardwarový MFA klíč (FIDO2), což zvyšuje riziko neoprávněného přístupu k mzdám a citlivým údajům zaměstnanců.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Správci HR systému se přihlašují pouze heslem bez hardwarové MFA — to zabraňuje účinné protekci proti phishingu a krádežím hesel, které jsou nejčastějším vektorem útoku na mzdové systémy.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Žádný formální proces pro smazání dat po skončení smlouvy — zákaznická data zůstávají v produkční databázi, zálohách nebo testovacích prostředích po měsíce či roky.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Žádný formální proces pro bezpečné odstranění dat po skončení smlouvy s klientem — údaje zůstávají na serverech nebo v zálohách i po roce, což vede k porušení GDPR a NIS2.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Chybí centralizované logování a audit přístupu administrátorů — změny v mzdových datech, smazání klientů nebo hromadné exporty nejsou zaznamenávány nebo jsou log soubory rychle mazány bez archivace.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Chybějící audit logging a monitorování přístupu — vy nemáte záznam o tom, kdo a kdy přistupoval k údajům kterého zaměstnance, a proto nemůžete detekovat neoprávněný přístup ani reagovat na incident.
     </li>
   </ul>
 </div>
@@ -210,7 +209,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">sprinto.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../nastroje/sprinto.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Zkontrolovat nástroj →</a>
+      <a href="../nastroje/sprinto.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -218,7 +217,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">secfix.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../nastroje/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Zkontrolovat nástroj →</a>
+      <a href="../nastroje/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -226,7 +225,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">drata.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../nastroje/drata.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Zkontrolovat nástroj →</a>
+      <a href="../nastroje/drata.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
   </div>
 </div>
@@ -237,21 +236,21 @@
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Jak ověřit, že moje multi-tenantová SaaS platforma má správnou izolaci dat?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Musí si HR software registrovat povinně jako NIS2 důležitá jednotka?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Proveďte penetrační test zaměřený na tenant hopping — pokuste se z účtu tenanta A přistupovat k datům tenanta B skrze API, SQL, nebo aplikační rozhraní. Výsledky testu by měly být záporné. Dále si nechte posoudit architekturu databází nezávislým audítorem a zajistěte, aby každý tenant používal samostatný řádkový filtr (row-level security) nebo oddělené databáze.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Pokud poskytujete HR nebo mzdový software více klientům a nefunkčnost by měla závažný dopad na hospodářství nebo společnost, ano. Zákon č. 264/2025 Sb. vás automaticky zařadí do Přílohy II. Máte do 31. prosince 2025 na samohodnocení a oznámení NÚKIB. Ověřit si svou povinnost můžete konzultací s NÚKIB nebo právním poradcem.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Co se stane, pokud nenahlásím incident NÚKIB v čase?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Co se stane, když vás napadnou hackeři a kradou mzdové data najednou stovkám firem?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Dle zákona č. 264/2025 Sb. § 37 hrozí pokuta až 5 milionů Kč za porušení povinnosti hlášení incidentů. Jako poskytovatel digitálních služeb se navíc expozujete právní odpovědnosti vůči klientům, kteří mohou požadovat kompenzaci za újmu vzniklou zpožděním hlášení a jejich neschopností informovat své zaměstnance či regulátory včas.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Musíte poslat NÚKIB předčasné varování do 24 hodin a detailní oznámení do 72 hodin. Vzhledem k rozsahu (mnoho klientů najednou) se jedná o kritický incident. Zároveň musíte kontaktovat všechny postižené klienty a jejich údaje hlásit úřadu na ochranu osobních údajů. Porušení lhůt hlášení vede k pokutě až 7 milionů EUR. Pokud incident vznikl kvůli nedostatečné izolaci tenantů na vaší straně, můžete být zodpovědní také za škodu vůči všem klientům.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Jak zajistit, aby administrátoři používali hardwarový MFA bez rušení workflow?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Jaká je přesná pokuta za nedodržení NIS2 povinností?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Implementujte FIDO2 nebo smartcard klíče jako povinné pro přístup do administračního panelu, ale umožněte administrátorům přihlášení se z kanceláře přes dedikovanou stanici s čtečkou klíčů. Pro výjezdy poskytněte bezpečný vzdálený přístup přes VPN a hardware klíč. Školte administrátory, aby si klíče nosili, a mají záložní klíč uložený v trezoru. Nepoužívejte SMS nebo softwarové tokeny jako náhradu.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Pro důležité jednotky (Příloha II) je maximální pokuta až 7 milionů EUR nebo 1,4 % celkového ročního obratu, pokud je tato hodnota vyšší. Pokuty ukládá NÚKIB. Při dlouhodobém porušení povinností (např. chybějící registrace, nefunkční incident reporting nebo nedostatečné bezpečnostní opatření) může NÚKIB ukládat pokuty i opakovaně.</p>
     </div>
   </div>
   </div>
@@ -270,8 +269,6 @@
   </div>
 </div>
 
-
-<nav class="related-sectors" aria-label="Související sektory" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Související sektory</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="index.html">Sektory spadající pod NIS2 v ČR 2026</a></li><li style="margin:0"><a href="insurance.html">NIS2 pro pojišťovny ČR 2026</a></li><li style="margin:0"><a href="it-outsourcing.html">NIS2 pro IT outsourcing, systémové integrátory a konzultace v ČR 2026</a></li><li style="margin:0"><a href="law-firms.html">NIS2 pro právní kanceláře v ČR</a></li><li style="margin:0"><a href="logistics.html">NIS2 pro přepravce v ČR</a></li><li style="margin:0"><a href="managed-services.html">NIS2 pro poskytovatele spravovaných služeb v ČR 2026</a></li></ul></nav>
 <footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
   <div class="container">
     <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
@@ -284,6 +281,5 @@
   </div>
 </footer>
 
-  <script src="/js/tg-cta.js" defer></script>
 </body>
 </html>
