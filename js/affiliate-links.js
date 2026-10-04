@@ -14,7 +14,7 @@ const AFFILIATE_MAP = [
   { match: "1password.com",  affiliate: "" },  // Same program as PL
   { match: "bitwarden.com",  affiliate: "" },  // Same program as PL
   { match: "bitdefender.com",  affiliate: "" },  // Same program as PL
-  { match: "acronis.com",  affiliate: "https://www.tkqlhce.com/click-101804169-13492976" },  // Same program as PL
+  { match: "acronis.com",  affiliate: "https://www.tkqlhce.com/click-101804169-13492976?url=https%3A%2F%2Fwww.acronis.com%2Fen%2Fproducts%2Fcyber-protect%2F" },  // Same program as PL
 ];
 
 /* aff-compliance v1 */
